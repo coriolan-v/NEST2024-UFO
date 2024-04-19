@@ -43,7 +43,7 @@
         "inactivityTimeout": false,
         "inactivityTime": 30,
         "touchCursorDisplayMode": "Auto",
-        "udpDestinationAddressType": "IPAddress",
+        "udpDestinationAddressType": "LocalSubnet",
         "udpDestinationAddress": "255.255.255.255",
         "udpDestinationPort": 5000,
         "udpReceiverPort": 5000,
@@ -498,7 +498,7 @@
         }
       },
       "wssDeviceSpec": {},
-      "lastModifiedTime": "2024-04-17T21:32:43.592Z"
+      "lastModifiedTime": "2024-04-19T09:25:46.618Z"
     },
     "zones": {
       "zonesById": {
@@ -653,9 +653,36 @@
       },
       "sequencesByParentId": {}
     },
-    "events": {},
+    "events": {
+      "769b23d7-5cee-4000-a6cf-864214511000": {
+        "id": "769b23d7-5cee-4000-a6cf-864214511000",
+        "name": "Spaceship status.mov_ev_ev",
+        "type": "Udp",
+        "mediaStateId": "11587564-e5ea-4000-a503-633c9d24f000",
+        "disabled": false,
+        "data": {
+          "data": "PILOTINT",
+          "label": "PILOTINT",
+          "export": true,
+          "assignInputToUserVariable": false,
+          "assignWildcardToUserVariable": false,
+          "userVariableToAssignInput": "0",
+          "userVariableToAssignWildcard": "0"
+        },
+        "action": "None"
+      }
+    },
     "transitions": {
-      "transitionsById": {},
+      "transitionsById": {
+        "856f6b2a-778d-4000-a3a2-f9a004ca7000": {
+          "id": "856f6b2a-778d-4000-a3a2-f9a004ca7000",
+          "name": "Spaceship status.mov_ev_tr",
+          "eventId": "769b23d7-5cee-4000-a6cf-864214511000",
+          "targetMediaStateId": "2cd18545-6b43-4000-aaab-1fac59a98000",
+          "type": "No effect",
+          "duration": 0
+        }
+      },
       "sequencesByEventId": {}
     },
     "commands": {
@@ -699,6 +726,26 @@
             }
           ],
           "sequenceId": "ef124edb-9ec2-4000-ad31-c089d43d8000"
+        },
+        "09c74d7e-1509-4000-afce-1a4b57674000": {
+          "id": "09c74d7e-1509-4000-afce-1a4b57674000",
+          "name": "Send UDP",
+          "operations": [
+            {
+              "type": "sendUdp",
+              "data": {
+                "messageData": {
+                  "params": [
+                    {
+                      "type": "Text",
+                      "value": "PILOTINT"
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "sequenceId": "f78965c3-0073-4000-a101-88f28d06c000"
         }
       },
       "sequencesById": {
@@ -709,6 +756,14 @@
           "sequence": [
             "6414face-8481-4000-a6c9-944254cbc000",
             "fcc18cbd-c4a7-4000-a365-14852a00e000"
+          ]
+        },
+        "f78965c3-0073-4000-a101-88f28d06c000": {
+          "id": "f78965c3-0073-4000-a101-88f28d06c000",
+          "type": "Event",
+          "parentId": "769b23d7-5cee-4000-a6cf-864214511000",
+          "sequence": [
+            "09c74d7e-1509-4000-afce-1a4b57674000"
           ]
         }
       }
@@ -742,12 +797,12 @@
       "293f1875-8fc9-4000-aa15-c98248f1e000": {
         "id": "293f1875-8fc9-4000-aa15-c98248f1e000",
         "name": "Spaceship status.mov",
-        "path": "/Users/coriolan/Movies/1080x1920 technical/",
+        "path": "/Users/coriolan/Movies/NEST Saucer files/",
         "networkId": 0,
         "location": "Local",
         "assetType": "Content",
         "scope": "58c0f17cdc0a48d2",
-        "locator": "file:///Users/coriolan/Movies/1080x1920 technical/Spaceship status.mov",
+        "locator": "file:///Users/coriolan/Movies/NEST Saucer files/Spaceship status.mov",
         "mediaType": "Video",
         "fileSize": 58536148,
         "lastModifiedDate": "2024-04-17T21:29:36.233Z",
@@ -756,12 +811,12 @@
       "a0a1d35c-58d3-4000-a3f7-68816fa7d000": {
         "id": "a0a1d35c-58d3-4000-a3f7-68816fa7d000",
         "name": "InteractionTrip.mov",
-        "path": "/Users/coriolan/Movies/1080x1920 technical/",
+        "path": "/Users/coriolan/Movies/NEST Saucer files/",
         "networkId": 0,
         "location": "Local",
         "assetType": "Content",
         "scope": "58c0f17cdc0a48d2",
-        "locator": "file:///Users/coriolan/Movies/1080x1920 technical/InteractionTrip.mov",
+        "locator": "file:///Users/coriolan/Movies/NEST Saucer files/InteractionTrip.mov",
         "mediaType": "Video",
         "fileSize": 177135137,
         "lastModifiedDate": "2024-04-17T21:31:39.308Z",
@@ -785,15 +840,15 @@
       "type": "ZONE",
       "selectableType": "ZONE"
     },
-    "selectionEntities": {
-      "2cd18545-6b43-4000-aaab-1fac59a98000": {
-        "id": "2cd18545-6b43-4000-aaab-1fac59a98000",
-        "type": "Video",
-        "selectableType": "STATE",
+    "selectionEntities": {},
+    "prevSelectionEntities": {
+      "769b23d7-5cee-4000-a6cf-864214511000": {
+        "id": "769b23d7-5cee-4000-a6cf-864214511000",
+        "type": "Event",
+        "selectableType": "TRANSITION",
         "selectableData": null
       }
     },
-    "prevSelectionEntities": {},
     "isEventAdvancedEnabled": false,
     "activeAssetMenuTab": "ASSETS"
   },
@@ -809,17 +864,23 @@
       "2cd18545-6b43-4000-aaab-1fac59a98000": {
         "id": "2cd18545-6b43-4000-aaab-1fac59a98000",
         "position": {
-          "x": 200.778564453125,
-          "y": -56.5005407333374
+          "x": -92.16305351257324,
+          "y": 208.93181371688843
         }
       }
     },
-    "eventDataById": {},
+    "eventDataById": {
+      "769b23d7-5cee-4000-a6cf-864214511000": {
+        "id": "769b23d7-5cee-4000-a6cf-864214511000",
+        "displayType": "DisplayLabel",
+        "labelLocation": "Bottom"
+      }
+    },
     "viewTransformByZoneId": {
       "fe61b6d3-b536-4000-a42c-8251fc5e3000": {
-        "x": 122.53662310497145,
-        "y": 103.45202117912345,
-        "k": 0.29118339661711423
+        "x": 259.60530232525724,
+        "y": 50.1113361011854,
+        "k": 0.47696850700062116
       }
     },
     "isLoaderEnabled": false
