@@ -8,18 +8,19 @@
 
 EthernetUDP Udp;
 
-IPAddress outIp(10, 0, 0, 1);
-const unsigned int outPort = 9999;
+IPAddress pcIP(10, 0, 0, 1);
+const unsigned int pcPort = 9999;
+const unsigned int arduinoPort = 8888;
 
 #ifdef PILOT
-IPAddress ip(10, 0, 0, 11);
+IPAddress ip(10, 0, 0, 4);
 byte mac[] = {
   0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED
 };  // you can find this written on the board of some Arduino Ethernets or shields
 #endif
 
 #ifdef COPILOT
-IPAddress ip(10, 0, 0, 12);
+IPAddress ip(10, 0, 0, 5);
 byte mac[] = {
   0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xEF
 };  // you can find this written on the board of some Arduino Ethernets or shields
@@ -50,7 +51,7 @@ void setup() {
   Serial.begin(115200);
 
   Ethernet.begin(mac, ip);
-  Udp.begin(8888);
+  Udp.begin(arduinoPort);
 
   Serial.print("My ip: ");
   Serial.println(ip);
@@ -58,7 +59,7 @@ void setup() {
   //Initialize the NFC module
   while (!nfc.begin()) {
     Serial.println("NFC init failure");
-    Udp.beginPacket(outIp, outPort);
+    Udp.beginPacket(pcIP, pcPort);
     #ifdef PILOT
     Udp.write("PILOT NFC init failure");    // send the bytes to the SLIP stream
     #endif
@@ -69,7 +70,7 @@ void setup() {
     delay(1000);
   }
 
-  Udp.beginPacket(outIp, outPort);
+  Udp.beginPacket(pcIP, pcPort);
   Serial.println("Successfully init NFC module");
   #ifdef PILOT
   Udp.write("PILOT Successfully NFC init ");    // send the bytes to the SLIP stream
@@ -127,7 +128,7 @@ void loop() {
 void sendOSC() {
   //OSCMessage msg();
 
-Udp.beginPacket(outIp, outPort);
+Udp.beginPacket(pcIP, pcPort);
 #ifdef PILOT
   //OSCMessage msg("PILOT");
   Udp.write("PILOT");    // send the bytes to the SLIP stream
@@ -153,7 +154,7 @@ Udp.beginPacket(outIp, outPort);
 //  udpmessage.toCharArray(charBuf, 50)
 
 
-// Udp.beginPacket(outIp, outPort);
+// Udp.beginPacket(pcIP, pcPort);
 
 // #ifdef PILOT
 //   //OSCMessage msg("PILOT");
