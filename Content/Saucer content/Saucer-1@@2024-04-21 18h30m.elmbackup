@@ -667,7 +667,7 @@
         </live>
         <background path="Screenshot 2024-04-18 at 22.20.08.png" opacity="0.4" />
         <fixtures>
-          <fixture group="NeonR2" group2="" ledType="GRB" dmxProtocol="ArtNet" startUniverse="21" startAddress="0" breakUniverseAfter="0">
+          <fixture group="null" group2="" ledType="GRB" dmxProtocol="ArtNet" startUniverse="21" startAddress="0" breakUniverseAfter="0">
             <geometry nbLeds="100" type="curve" rotation="-1.21463229208956">
               <points>
                 <point x="1052.3906361062" y="225.412444388423" />
@@ -783,7 +783,7 @@
               </points>
             </geometry>
           </fixture>
-          <fixture group="null" group2="" ledType="GRB" dmxProtocol="ArtNet" startUniverse="22" startAddress="0" breakUniverseAfter="0">
+          <fixture group="NeonR2" group2="" ledType="GRB" dmxProtocol="ArtNet" startUniverse="22" startAddress="0" breakUniverseAfter="0">
             <geometry nbLeds="100" type="curve" rotation="-1.21463229208956">
               <points>
                 <point x="1052.3906361062" y="225.412444388423" />
