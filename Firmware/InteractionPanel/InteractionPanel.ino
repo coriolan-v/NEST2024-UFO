@@ -8,7 +8,8 @@
 
 EthernetUDP Udp;
 
-IPAddress pcIP(10, 0, 0, 1);
+//IPAddress pcIP(10, 0, 0, 1);
+IPAddress pcIP(127, 0, 0, 1);
 const unsigned int pcPort = 9999;
 const unsigned int arduinoPort = 8888;
 
@@ -47,7 +48,7 @@ String udpmessage = "";
 void setup() {
 
 
-  delay(2000);
+  //delay(2000);
   Serial.begin(115200);
 
   Ethernet.begin(mac, ip);
@@ -90,62 +91,87 @@ void loop() {
 
   if (nfc.scan()) {
 
-    if (new_cardUID != old_cardUID) {
-      //cardPresent = false;
+    if(cardPresent == false){
+    //if (new_cardUID != old_cardUID) {
+      cardPresent = true;
+       Serial.print("card present ");
       NFCcard = nfc.getInformation();
       // Serial.println("----------------NFC card/tag information-------------------");
       // Serial.print("UID Lenght: ");
       // Serial.println(NFCcard.uidlenght);
-      Serial.print("UID: ");
-      new_cardUID = "";
-      for (int i = 0; i < NFCcard.uidlenght; i++) {
-        Serial.print(NFCcard.uid[i], HEX);
-        Serial.print(" ");
-        new_cardUID += NFCcard.uid[i];
-      }
+      // Serial.print("UID: ");
+      // new_cardUID = "";
+      // for (int i = 0; i < NFCcard.uidlenght; i++) {
+      //   Serial.print(NFCcard.uid[i], HEX);
+      //   Serial.print(" ");
+      //   new_cardUID += NFCcard.uid[i];
+      // }
     
       //Serial.print("my uid: "); Serial.println(cardUID);
-      sendOSC();
+      sendOSC(1);
 
-      old_cardUID = new_cardUID;
+      //old_cardUID = new_cardUID;
 
        stampMillis = millis();
     } 
-  } 
+  } else {
+    if(cardPresent == true && millis() > stampMillis + 3000){
+      cardPresent = false;
 
-  if (millis() - stampMillis > 2000 && old_cardUID == new_cardUID) {
-    stampMillis = millis();
-
-    old_cardUID = 1;
-
-    Serial.println("reset");
-    //Serial.print("old_cardUID: "); Serial.println(old_cardUID);
-    //Serial.print("new_cardUID: "); Serial.println(new_cardUID);
+      Serial.print("card removed ");
+      sendOSC(2);
+    }
   }
+
+  // if (millis() - stampMillis > 2000 && old_cardUID == new_cardUID) {
+  //   stampMillis = millis();
+
+  //   old_cardUID = 1;
+
+  //   Serial.println("reset");
+  //   //Serial.print("old_cardUID: "); Serial.println(old_cardUID);
+  //   //Serial.print("new_cardUID: "); Serial.println(new_cardUID);
+  // }
 
 }
 
-void sendOSC() {
+void sendOSC(int messageID) {
   //OSCMessage msg();
 
 Udp.beginPacket(pcIP, pcPort);
+
+if(messageID == 1){
 #ifdef PILOT
+//messageToSend = "PILOT" + messageToSend;
   //OSCMessage msg("PILOT");
-  Udp.write("PILOT");    // send the bytes to the SLIP stream
+  Udp.write("PILOTIN");    // send the bytes to the SLIP stream
 #endif
 
 #ifdef COPILOT
   //OSCMessage msg("COPILOT");
-  Udp.write("COPILOT");    // send the bytes to the SLIP stream
+  Udp.write("COPILOTIN");    // send the bytes to the SLIP stream
 #endif
+} else if(messageID == 2){
+#ifdef PILOT
+//messageToSend = "PILOT" + messageToSend;
+  //OSCMessage msg("PILOT");
+  Udp.write("PILOTOUT");    // send the bytes to the SLIP stream
+#endif
+
+#ifdef COPILOT
+  //OSCMessage msg("COPILOT");
+  Udp.write("COPILOTOUT");    // send the bytes to the SLIP stream
+#endif
+}
+
 
   
   //msg.send(Udp);    // send the bytes to the SLIP stream
   Udp.endPacket();  // mark the end of the OSC Packet
   //msg.empty();      // free space occupied by message
 
-  Serial.println("Sent OSC message");
-  //Serial.println(Udp);
+  Serial.println("Sent UDP message ");
+ //Serial.println(messageToSend);
 }
 
 // void sendUDPmessage(String udpmessage)
