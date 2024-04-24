@@ -1,16 +1,16 @@
-#define PILOT
+#define COPILOT
 
 #include <DFRobot_PN532.h>
 #include <Ethernet.h>
 #include <EthernetUdp.h>
 #include <SPI.h>
-#include <OSCMessage.h>
+//#include <OSCMessage.h>
 
 EthernetUDP Udp;
 
-//IPAddress pcIP(10, 0, 0, 1);
-IPAddress pcIP(127, 0, 0, 1);
-const unsigned int pcPort = 9999;
+IPAddress pcIP(10, 0, 0, 1);
+//IPAddress pcIP(127, 0, 0, 0);
+const unsigned int pcPort = 5001;
 const unsigned int arduinoPort = 8888;
 
 #ifdef PILOT
@@ -53,6 +53,7 @@ void setup() {
 
   Ethernet.begin(mac, ip);
   Udp.begin(arduinoPort);
+  Udp.setTimeout(1);
 
   Serial.print("My ip: ");
   Serial.println(ip);
@@ -95,22 +96,10 @@ void loop() {
     //if (new_cardUID != old_cardUID) {
       cardPresent = true;
        Serial.print("card present ");
-      NFCcard = nfc.getInformation();
-      // Serial.println("----------------NFC card/tag information-------------------");
-      // Serial.print("UID Lenght: ");
-      // Serial.println(NFCcard.uidlenght);
-      // Serial.print("UID: ");
-      // new_cardUID = "";
-      // for (int i = 0; i < NFCcard.uidlenght; i++) {
-      //   Serial.print(NFCcard.uid[i], HEX);
-      //   Serial.print(" ");
-      //   new_cardUID += NFCcard.uid[i];
-      // }
-    
-      //Serial.print("my uid: "); Serial.println(cardUID);
+      
       sendOSC(1);
-
-      //old_cardUID = new_cardUID;
+     
+      NFCcard = nfc.getInformation();
 
        stampMillis = millis();
     } 
@@ -122,17 +111,6 @@ void loop() {
       sendOSC(2);
     }
   }
-
-  // if (millis() - stampMillis > 2000 && old_cardUID == new_cardUID) {
-  //   stampMillis = millis();
-
-  //   old_cardUID = 1;
-
-  //   Serial.println("reset");
-  //   //Serial.print("old_cardUID: "); Serial.println(old_cardUID);
-  //   //Serial.print("new_cardUID: "); Serial.println(new_cardUID);
-  // }
-
 }
 
 void sendOSC(int messageID) {
