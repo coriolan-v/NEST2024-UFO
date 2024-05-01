@@ -1,8 +1,8 @@
 {
   "schedulePresentations": {
     "schedulePresentationsById": {
-      "fa9eb457-e3a9-4000-a0a1-b06069c1f000": {
-        "id": "fa9eb457-e3a9-4000-a0a1-b06069c1f000",
+      "8bcdc4f8-264c-4000-a95f-b39aff172000": {
+        "id": "8bcdc4f8-264c-4000-a95f-b39aff172000",
         "presentationLocator": {
           "name": "Pilot.bpfx",
           "path": "/Users/coriolan/GitHub/NEST2024-UFO/Content/Video content/",
@@ -11,7 +11,7 @@
           "assetType": "Project",
           "scope": "58c0f17cdc0a48d2"
         },
-        "dateTime": "2024-04-18T00:00:00.000Z",
+        "dateTime": "2024-04-23T00:00:00.000Z",
         "duration": 1440,
         "allDayEveryDay": true,
         "recurrence": false,
@@ -24,10 +24,10 @@
       }
     },
     "allSchedulePresentations": [
-      "fa9eb457-e3a9-4000-a0a1-b06069c1f000"
+      "8bcdc4f8-264c-4000-a95f-b39aff172000"
     ]
   },
   "modifiedTime": {
-    "lastModifiedTime": "2024-04-18T21:38:14.601Z"
+    "lastModifiedTime": "2024-04-23T19:51:47.027Z"
   }
 }

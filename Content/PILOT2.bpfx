@@ -6,9 +6,9 @@
   "bsdm": {
     "sign": {
       "properties": {
-        "id": "25085bf8-e9ba-4000-a2b3-3dc8ba234000",
+        "id": "e6d7eb69-9c1b-4000-a8f6-05626b57b000",
         "version": "1.3.10",
-        "name": "Pilot",
+        "name": "PILOT2",
         "videoMode": "1920x1080x60p",
         "size": {
           "width": 1080,
@@ -43,7 +43,7 @@
         "inactivityTimeout": false,
         "inactivityTime": 30,
         "touchCursorDisplayMode": "Auto",
-        "udpDestinationAddressType": "LocalSubnet",
+        "udpDestinationAddressType": "IPAddress",
         "udpDestinationAddress": "255.255.255.255",
         "udpDestinationPort": 5000,
         "udpReceiverPort": 5000,
@@ -498,22 +498,22 @@
         }
       },
       "wssDeviceSpec": {},
-      "lastModifiedTime": "2024-04-23T20:10:03.633Z"
+      "lastModifiedTime": "2024-04-23T20:18:56.972Z"
     },
     "zones": {
       "zonesById": {
-        "fe61b6d3-b536-4000-a42c-8251fc5e3000": {
-          "id": "fe61b6d3-b536-4000-a42c-8251fc5e3000",
+        "2e3e7980-3fc1-4000-a757-c8833f4e1000": {
+          "id": "2e3e7980-3fc1-4000-a757-c8833f4e1000",
           "name": "Zone 1",
           "type": "VideoOrImages",
           "tag": "VI1",
           "nonInteractive": false,
-          "initialMediaStateId": "11587564-e5ea-4000-a503-633c9d24f000",
+          "initialMediaStateId": "bcd08da1-9b46-4000-af3d-47cf6605c000",
           "position": {
-            "width": 1920,
-            "height": 1080,
             "x": 0,
             "y": 0,
+            "width": 1920,
+            "height": 1080,
             "pct": false
           },
           "properties": {
@@ -568,31 +568,31 @@
         }
       },
       "allZones": [
-        "fe61b6d3-b536-4000-a42c-8251fc5e3000"
+        "2e3e7980-3fc1-4000-a757-c8833f4e1000"
       ],
       "zoneLayersById": {
-        "b7ead462-d37a-4000-afa3-f155d9dd1000": {
-          "id": "b7ead462-d37a-4000-afa3-f155d9dd1000",
+        "6cc541f0-c76e-4000-a161-14f0783fb000": {
+          "id": "6cc541f0-c76e-4000-a161-14f0783fb000",
           "type": "Graphics",
           "zoneSequence": [
-            "fe61b6d3-b536-4000-a42c-8251fc5e3000"
+            "2e3e7980-3fc1-4000-a757-c8833f4e1000"
           ]
         },
-        "4e6198ec-5143-4000-a3c3-a7c4035d1000": {
-          "id": "4e6198ec-5143-4000-a3c3-a7c4035d1000",
+        "778ad534-5ded-4000-ad33-a217b0317000": {
+          "id": "778ad534-5ded-4000-ad33-a217b0317000",
           "type": "Audio",
           "zoneSequence": []
         },
-        "746c8e33-9d0f-4000-ac0f-35f7406f9000": {
-          "id": "746c8e33-9d0f-4000-ac0f-35f7406f9000",
+        "b25c3871-ca14-4000-a5bc-5735a7d59000": {
+          "id": "b25c3871-ca14-4000-a5bc-5735a7d59000",
           "type": "Invisible",
           "zoneSequence": []
         },
-        "aa9ab6e5-f2c2-4000-a3e6-5ceae7b93000": {
-          "id": "aa9ab6e5-f2c2-4000-a3e6-5ceae7b93000",
+        "0d0dd6d5-db14-4000-af14-190f4be96000": {
+          "id": "0d0dd6d5-db14-4000-af14-190f4be96000",
           "type": "Video",
           "zoneSequence": [
-            "fe61b6d3-b536-4000-a42c-8251fc5e3000"
+            "2e3e7980-3fc1-4000-a757-c8833f4e1000"
           ],
           "zoneLayerSpecificProperties": {
             "type": "HD",
@@ -603,11 +603,11 @@
         }
       },
       "zoneLayerSequence": [
-        "b7ead462-d37a-4000-afa3-f155d9dd1000",
-        "aa9ab6e5-f2c2-4000-a3e6-5ceae7b93000"
+        "6cc541f0-c76e-4000-a161-14f0783fb000",
+        "0d0dd6d5-db14-4000-af14-190f4be96000"
       ],
       "zoneTagIndices": {
-        "fe61b6d3-b536-4000-a42c-8251fc5e3000": 4
+        "2e3e7980-3fc1-4000-a757-c8833f4e1000": 3
       }
     },
     "screens": {
@@ -616,35 +616,35 @@
     },
     "mediaStates": {
       "mediaStatesById": {
-        "11587564-e5ea-4000-a503-633c9d24f000": {
-          "id": "11587564-e5ea-4000-a503-633c9d24f000",
+        "bcd08da1-9b46-4000-af3d-47cf6605c000": {
+          "id": "bcd08da1-9b46-4000-af3d-47cf6605c000",
           "name": "Spaceship status.mov",
           "tag": "1",
           "container": {
-            "id": "fe61b6d3-b536-4000-a42c-8251fc5e3000",
+            "id": "2e3e7980-3fc1-4000-a757-c8833f4e1000",
             "type": 0
           },
           "contentItem": {
             "name": "Spaceship status.mov",
             "type": "Video",
-            "assetId": "293f1875-8fc9-4000-aa15-c98248f1e000",
+            "assetId": "58439442-8341-4000-a45e-8ce491f62000",
             "volume": 100,
             "videoDisplayMode": "2D",
             "automaticallyLoop": true
           }
         },
-        "2cd18545-6b43-4000-aaab-1fac59a98000": {
-          "id": "2cd18545-6b43-4000-aaab-1fac59a98000",
+        "4844c5a1-490f-4000-a6af-86dea36d4000": {
+          "id": "4844c5a1-490f-4000-a6af-86dea36d4000",
           "name": "InteractionTrip.mov",
-          "tag": "3",
+          "tag": "2",
           "container": {
-            "id": "fe61b6d3-b536-4000-a42c-8251fc5e3000",
+            "id": "2e3e7980-3fc1-4000-a757-c8833f4e1000",
             "type": 0
           },
           "contentItem": {
             "name": "InteractionTrip.mov",
             "type": "Video",
-            "assetId": "a0a1d35c-58d3-4000-a3f7-68816fa7d000",
+            "assetId": "70e2bc1c-1380-4000-a582-c6c79fbe7000",
             "volume": 100,
             "videoDisplayMode": "2D",
             "automaticallyLoop": true
@@ -654,11 +654,11 @@
       "sequencesByParentId": {}
     },
     "events": {
-      "769b23d7-5cee-4000-a6cf-864214511000": {
-        "id": "769b23d7-5cee-4000-a6cf-864214511000",
+      "c2d78f2f-6fbe-4000-aecc-d75333da4000": {
+        "id": "c2d78f2f-6fbe-4000-aecc-d75333da4000",
         "name": "Spaceship status.mov_ev_ev",
         "type": "Udp",
-        "mediaStateId": "11587564-e5ea-4000-a503-633c9d24f000",
+        "mediaStateId": "bcd08da1-9b46-4000-af3d-47cf6605c000",
         "disabled": false,
         "data": {
           "data": "PILOT2<any>",
@@ -671,11 +671,11 @@
         },
         "action": "None"
       },
-      "c13a6e76-3b70-4000-a531-7f1527a3c000": {
-        "id": "c13a6e76-3b70-4000-a531-7f1527a3c000",
+      "886c6afe-6829-4000-afde-cf4c34460000": {
+        "id": "886c6afe-6829-4000-afde-cf4c34460000",
         "name": "InteractionTrip.mov_ev_ev",
         "type": "Udp",
-        "mediaStateId": "2cd18545-6b43-4000-aaab-1fac59a98000",
+        "mediaStateId": "4844c5a1-490f-4000-a6af-86dea36d4000",
         "disabled": false,
         "data": {
           "data": "PILOT1<any>",
@@ -691,19 +691,19 @@
     },
     "transitions": {
       "transitionsById": {
-        "856f6b2a-778d-4000-a3a2-f9a004ca7000": {
-          "id": "856f6b2a-778d-4000-a3a2-f9a004ca7000",
+        "b2342e7c-5e60-4000-af67-80673e0e3000": {
+          "id": "b2342e7c-5e60-4000-af67-80673e0e3000",
           "name": "Spaceship status.mov_ev_tr",
-          "eventId": "769b23d7-5cee-4000-a6cf-864214511000",
-          "targetMediaStateId": "2cd18545-6b43-4000-aaab-1fac59a98000",
+          "eventId": "c2d78f2f-6fbe-4000-aecc-d75333da4000",
+          "targetMediaStateId": "4844c5a1-490f-4000-a6af-86dea36d4000",
           "type": "No effect",
           "duration": 0
         },
-        "19c576fb-9cab-4000-ac36-59a1841c6000": {
-          "id": "19c576fb-9cab-4000-ac36-59a1841c6000",
+        "e1acb64c-3ce0-4000-afc7-eba36b8b4000": {
+          "id": "e1acb64c-3ce0-4000-afc7-eba36b8b4000",
           "name": "InteractionTrip.mov_ev_tr",
-          "eventId": "c13a6e76-3b70-4000-a531-7f1527a3c000",
-          "targetMediaStateId": "11587564-e5ea-4000-a503-633c9d24f000",
+          "eventId": "886c6afe-6829-4000-afde-cf4c34460000",
+          "targetMediaStateId": "bcd08da1-9b46-4000-af3d-47cf6605c000",
           "type": "No effect",
           "duration": 0
         }
@@ -711,87 +711,8 @@
       "sequencesByEventId": {}
     },
     "commands": {
-      "commandsById": {
-        "6414face-8481-4000-a6c9-944254cbc000": {
-          "id": "6414face-8481-4000-a6c9-944254cbc000",
-          "name": "Send UDP",
-          "operations": [
-            {
-              "type": "sendUdp",
-              "data": {
-                "messageData": {
-                  "params": [
-                    {
-                      "type": "Text",
-                      "value": "PILOTINT"
-                    }
-                  ]
-                }
-              }
-            }
-          ],
-          "sequenceId": "ef124edb-9ec2-4000-ad31-c089d43d8000"
-        },
-        "fcc18cbd-c4a7-4000-a365-14852a00e000": {
-          "id": "fcc18cbd-c4a7-4000-a365-14852a00e000",
-          "name": "Send UDP (bytes)",
-          "operations": [
-            {
-              "type": "sendUdpBytes",
-              "data": {
-                "messageData": {
-                  "params": [
-                    {
-                      "type": "Text",
-                      "value": "98"
-                    }
-                  ]
-                }
-              }
-            }
-          ],
-          "sequenceId": "ef124edb-9ec2-4000-ad31-c089d43d8000"
-        },
-        "09c74d7e-1509-4000-afce-1a4b57674000": {
-          "id": "09c74d7e-1509-4000-afce-1a4b57674000",
-          "name": "Send UDP",
-          "operations": [
-            {
-              "type": "sendUdp",
-              "data": {
-                "messageData": {
-                  "params": [
-                    {
-                      "type": "Text",
-                      "value": "PILOTINT"
-                    }
-                  ]
-                }
-              }
-            }
-          ],
-          "sequenceId": "f78965c3-0073-4000-a101-88f28d06c000"
-        }
-      },
-      "sequencesById": {
-        "ef124edb-9ec2-4000-ad31-c089d43d8000": {
-          "id": "ef124edb-9ec2-4000-ad31-c089d43d8000",
-          "type": "StateEntry",
-          "parentId": "2cd18545-6b43-4000-aaab-1fac59a98000",
-          "sequence": [
-            "6414face-8481-4000-a6c9-944254cbc000",
-            "fcc18cbd-c4a7-4000-a365-14852a00e000"
-          ]
-        },
-        "f78965c3-0073-4000-a101-88f28d06c000": {
-          "id": "f78965c3-0073-4000-a101-88f28d06c000",
-          "type": "Event",
-          "parentId": "769b23d7-5cee-4000-a6cf-864214511000",
-          "sequence": [
-            "09c74d7e-1509-4000-afce-1a4b57674000"
-          ]
-        }
-      }
+      "commandsById": {},
+      "sequencesById": {}
     },
     "htmlSites": {},
     "nodeApps": {},
@@ -819,8 +740,8 @@
     "customAutorun": "0",
     "bmapSpec": "0",
     "assetMap": {
-      "293f1875-8fc9-4000-aa15-c98248f1e000": {
-        "id": "293f1875-8fc9-4000-aa15-c98248f1e000",
+      "58439442-8341-4000-a45e-8ce491f62000": {
+        "id": "58439442-8341-4000-a45e-8ce491f62000",
         "name": "Spaceship status.mov",
         "path": "/Users/coriolan/Movies/NEST Saucer files/",
         "networkId": 0,
@@ -833,8 +754,8 @@
         "lastModifiedDate": "2024-04-17T21:29:36.233Z",
         "refCount": 1
       },
-      "a0a1d35c-58d3-4000-a3f7-68816fa7d000": {
-        "id": "a0a1d35c-58d3-4000-a3f7-68816fa7d000",
+      "70e2bc1c-1380-4000-a582-c6c79fbe7000": {
+        "id": "70e2bc1c-1380-4000-a582-c6c79fbe7000",
         "name": "InteractionTrip.mov",
         "path": "/Users/coriolan/Movies/NEST Saucer files/",
         "networkId": 0,
@@ -861,49 +782,63 @@
   "selection": {
     "hovered": null,
     "selectionContainer": {
-      "id": "fe61b6d3-b536-4000-a42c-8251fc5e3000",
+      "id": "2e3e7980-3fc1-4000-a757-c8833f4e1000",
       "type": "ZONE",
       "selectableType": "ZONE"
     },
-    "selectionEntities": {},
-    "prevSelectionEntities": {},
+    "selectionEntities": {
+      "886c6afe-6829-4000-afde-cf4c34460000": {
+        "id": "886c6afe-6829-4000-afde-cf4c34460000",
+        "type": "Event",
+        "selectableType": "TRANSITION",
+        "selectableData": null
+      }
+    },
+    "prevSelectionEntities": {
+      "4844c5a1-490f-4000-a6af-86dea36d4000": {
+        "id": "4844c5a1-490f-4000-a6af-86dea36d4000",
+        "type": "Video",
+        "selectableType": "STATE",
+        "selectableData": null
+      }
+    },
     "isEventAdvancedEnabled": false,
     "activeAssetMenuTab": "ASSETS"
   },
   "interactiveCanvas": {
     "statePositionById": {
-      "11587564-e5ea-4000-a503-633c9d24f000": {
-        "id": "11587564-e5ea-4000-a503-633c9d24f000",
+      "bcd08da1-9b46-4000-af3d-47cf6605c000": {
+        "id": "bcd08da1-9b46-4000-af3d-47cf6605c000",
         "position": {
-          "x": -82.93195056915283,
-          "y": -7.7403106689453125
+          "x": 0,
+          "y": 0
         }
       },
-      "2cd18545-6b43-4000-aaab-1fac59a98000": {
-        "id": "2cd18545-6b43-4000-aaab-1fac59a98000",
+      "4844c5a1-490f-4000-a6af-86dea36d4000": {
+        "id": "4844c5a1-490f-4000-a6af-86dea36d4000",
         "position": {
-          "x": -92.16305351257324,
-          "y": 208.93181371688843
+          "x": 294.0498962402344,
+          "y": 6.947563171386719
         }
       }
     },
     "eventDataById": {
-      "769b23d7-5cee-4000-a6cf-864214511000": {
-        "id": "769b23d7-5cee-4000-a6cf-864214511000",
+      "c2d78f2f-6fbe-4000-aecc-d75333da4000": {
+        "id": "c2d78f2f-6fbe-4000-aecc-d75333da4000",
         "displayType": "DisplayLabel",
         "labelLocation": "Bottom"
       },
-      "c13a6e76-3b70-4000-a531-7f1527a3c000": {
-        "id": "c13a6e76-3b70-4000-a531-7f1527a3c000",
+      "886c6afe-6829-4000-afde-cf4c34460000": {
+        "id": "886c6afe-6829-4000-afde-cf4c34460000",
         "displayType": "DisplayLabel",
         "labelLocation": "Bottom"
       }
     },
     "viewTransformByZoneId": {
-      "fe61b6d3-b536-4000-a42c-8251fc5e3000": {
-        "x": 177.5985401231549,
-        "y": 119.75025420412288,
-        "k": 0.4782196531485607
+      "2e3e7980-3fc1-4000-a757-c8833f4e1000": {
+        "x": 262.9637522027198,
+        "y": 134.1986739720065,
+        "k": 0.5326594953261785
       }
     },
     "isLoaderEnabled": false
