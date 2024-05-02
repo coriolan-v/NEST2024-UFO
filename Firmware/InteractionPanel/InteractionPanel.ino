@@ -1,10 +1,10 @@
 #define COPILOT
 
+#include "UIDs.h"
 #include <DFRobot_PN532.h>
 #include <Ethernet.h>
 #include <EthernetUdp.h>
 #include <SPI.h>
-//#include <OSCMessage.h>
 
 EthernetUDP Udp;
 
@@ -38,17 +38,9 @@ DFRobot_PN532::sCard_t NFCcard;
 
 unsigned long stampMillis;
 String udpmessage = "";
-// #ifdef PILOT
-// udpmessage = String("PILOT");
-// #endif
-// #ifdef COPILOT
-// udpmessage = String("COPILOT");
-// #endif
 
-void setup() {
-
-
-  //delay(2000);
+void setup() 
+{
   Serial.begin(115200);
 
   Ethernet.begin(mac, ip);
@@ -62,53 +54,86 @@ void setup() {
   while (!nfc.begin()) {
     Serial.println("NFC init failure");
     Udp.beginPacket(pcIP, pcPort);
-    #ifdef PILOT
-    Udp.write("PILOT NFC init failure");    // send the bytes to the SLIP stream
-    #endif
-    #ifdef COPILOT
-    Udp.write("COPILOT NFC init failure");    // send the bytes to the SLIP stream
-    #endif
+#ifdef PILOT
+    Udp.write("PILOT NFC init failure");  // send the bytes to the SLIP stream
+#endif
+#ifdef COPILOT
+    Udp.write("COPILOT NFC init failure");  // send the bytes to the SLIP stream
+#endif
     Udp.endPacket();  // mark the end of the OSC Packet
     delay(1000);
   }
 
   Udp.beginPacket(pcIP, pcPort);
   Serial.println("Successfully init NFC module");
-  #ifdef PILOT
-  Udp.write("PILOT Successfully NFC init ");    // send the bytes to the SLIP stream
-  #endif
-  #ifdef COPILOT
-  Udp.write("COPILOT Successfully NFC init ");    // send the bytes to the SLIP stream
-  #endif
+#ifdef PILOT
+  Udp.write("PILOT Successfully NFC init ");  // send the bytes to the SLIP stream
+#endif
+#ifdef COPILOT
+  Udp.write("COPILOT Successfully NFC init ");  // send the bytes to the SLIP stream
+#endif
   Udp.endPacket();  // mark the end of the OSC Packet
 }
 
 bool cardPresent = false;
 
-String old_cardUID = "1";
-String new_cardUID = "0";
+//String old_cardUID = "1";
+String new_cardUID = "";
 
 void loop() {
 
   if (nfc.scan()) {
 
-    if(cardPresent == false){
-    //if (new_cardUID != old_cardUID) {
+    if (cardPresent == false) {
+      //if (new_cardUID != old_cardUID) {
       cardPresent = true;
-       Serial.print("card present ");
-      
-      sendOSC(1);
-     
+      Serial.print("card present ");
+
+      //sendOSC(1);
+
       NFCcard = nfc.getInformation();
 
-       stampMillis = millis();
-    } 
+      new_cardUID = "";
+
+      //Serial.print("UID Lenght: ");
+      //Serial.println(NFCcard.uidlenght);
+      Serial.print("UID: ");
+      for (int i = 0; i < NFCcard.uidlenght; i++) {
+        //Serial.print(NFCcard.uid[i]);
+        //Serial.print(" ");
+        new_cardUID += NFCcard.uid[i];
+      }
+      Serial.println(new_cardUID);
+
+      for(int i = 0; i < 50; i++){
+        if(new_cardUID == cardUIDs[i]){
+          if(i < 10){
+            Serial.println("Match group 1");
+            sendOSC(1);
+          } else if (i >= 10 && i < 20){
+            Serial.println("Match group 2");
+            sendOSC(2);
+          } else if (i >= 20 && i < 30){
+            Serial.println("Match group 3");
+            sendOSC(3);
+          }else if (i >= 30 && i < 30){
+            Serial.println("Match group 4");
+            sendOSC(4);
+          }else if (i >= 40){
+            Serial.println("Match group 5");
+            sendOSC(5);
+          }
+        }
+      }
+
+      stampMillis = millis();
+    }
   } else {
-    if(cardPresent == true && millis() > stampMillis + 3000){
+    if (cardPresent == true && millis() > stampMillis + 3000) {
       cardPresent = false;
 
       Serial.print("card removed ");
-      sendOSC(2);
+      sendOSC(0);
     }
   }
 }
@@ -116,40 +141,35 @@ void loop() {
 void sendOSC(int messageID) {
   //OSCMessage msg();
 
-Udp.beginPacket(pcIP, pcPort);
+  Udp.beginPacket(pcIP, pcPort);
 
-if(messageID == 1){
+  if (messageID == 0) {
 #ifdef PILOT
-//messageToSend = "PILOT" + messageToSend;
-  //OSCMessage msg("PILOT");
-  Udp.write("PILOTIN");    // send the bytes to the SLIP stream
+    Udp.write("PILOT/0");  // send the bytes to the SLIP stream
+    Serial.println("PILOT/0");
 #endif
 
 #ifdef COPILOT
-  //OSCMessage msg("COPILOT");
-  Udp.write("COPILOTIN");    // send the bytes to the SLIP stream
+    Udp.write("COPILOT/0");  // send the bytes to the SLIP stream
+    Serial.println("COPILOT/0");
 #endif
-} else if(messageID == 2){
+  } else {
 #ifdef PILOT
-//messageToSend = "PILOT" + messageToSend;
-  //OSCMessage msg("PILOT");
-  Udp.write("PILOTOUT");    // send the bytes to the SLIP stream
+    Udp.write("PILOT/" + messageID);  // send the bytes to the SLIP stream
+    Serial.println("PILOT/" + messageID);
 #endif
-
 #ifdef COPILOT
-  //OSCMessage msg("COPILOT");
-  Udp.write("COPILOTOUT");    // send the bytes to the SLIP stream
+    Udp.write("COPILOT/" + messageID);  // send the bytes to the SLIP stream
+    Serial.println("COPILOT/" + messageID);
 #endif
-}
+  } 
 
-
-  
   //msg.send(Udp);    // send the bytes to the SLIP stream
   Udp.endPacket();  // mark the end of the OSC Packet
   //msg.empty();      // free space occupied by message
 
-  Serial.println("Sent UDP message ");
- //Serial.println(messageToSend);
+  Serial.println("Sent UDP message!");
+  //Serial.println(messageToSend);
 }
 
 // void sendUDPmessage(String udpmessage)
