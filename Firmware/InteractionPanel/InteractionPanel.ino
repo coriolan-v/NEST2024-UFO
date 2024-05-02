@@ -145,22 +145,22 @@ void sendOSC(int messageID) {
 
   if (messageID == 0) {
 #ifdef PILOT
-    Udp.write("PILOT/0");  // send the bytes to the SLIP stream
-    Serial.println("PILOT/0");
+    Udp.write("PILOTOUT");  // send the bytes to the SLIP stream
+    Serial.println("PILOTOUT");
 #endif
 
 #ifdef COPILOT
-    Udp.write("COPILOT/0");  // send the bytes to the SLIP stream
-    Serial.println("COPILOT/0");
+    Udp.write("COPILOTOUT");  // send the bytes to the SLIP stream
+    Serial.println("COPILOTOUT");
 #endif
   } else {
 #ifdef PILOT
-    Udp.write("PILOT/" + messageID);  // send the bytes to the SLIP stream
-    Serial.println("PILOT/" + messageID);
+    Udp.write("PILOT" + messageID);  // send the bytes to the SLIP stream
+    Serial.println("PILOT" + messageID);
 #endif
 #ifdef COPILOT
-    Udp.write("COPILOT/" + messageID);  // send the bytes to the SLIP stream
-    Serial.println("COPILOT/" + messageID);
+    Udp.write("COPILOT" + messageID);  // send the bytes to the SLIP stream
+    Serial.println("COPILOT" + messageID);
 #endif
   } 
 

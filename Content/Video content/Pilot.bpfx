@@ -498,7 +498,7 @@
         }
       },
       "wssDeviceSpec": {},
-      "lastModifiedTime": "2024-04-19T09:25:46.618Z"
+      "lastModifiedTime": "2024-04-23T20:10:03.633Z"
     },
     "zones": {
       "zonesById": {
@@ -661,8 +661,25 @@
         "mediaStateId": "11587564-e5ea-4000-a503-633c9d24f000",
         "disabled": false,
         "data": {
-          "data": "PILOTINT",
-          "label": "PILOTINT",
+          "data": "PILOT2<any>",
+          "label": "PILOT2<any>",
+          "export": true,
+          "assignInputToUserVariable": false,
+          "assignWildcardToUserVariable": false,
+          "userVariableToAssignInput": "0",
+          "userVariableToAssignWildcard": "0"
+        },
+        "action": "None"
+      },
+      "c13a6e76-3b70-4000-a531-7f1527a3c000": {
+        "id": "c13a6e76-3b70-4000-a531-7f1527a3c000",
+        "name": "InteractionTrip.mov_ev_ev",
+        "type": "Udp",
+        "mediaStateId": "2cd18545-6b43-4000-aaab-1fac59a98000",
+        "disabled": false,
+        "data": {
+          "data": "PILOT1<any>",
+          "label": "PILOT1<any>",
           "export": true,
           "assignInputToUserVariable": false,
           "assignWildcardToUserVariable": false,
@@ -679,6 +696,14 @@
           "name": "Spaceship status.mov_ev_tr",
           "eventId": "769b23d7-5cee-4000-a6cf-864214511000",
           "targetMediaStateId": "2cd18545-6b43-4000-aaab-1fac59a98000",
+          "type": "No effect",
+          "duration": 0
+        },
+        "19c576fb-9cab-4000-ac36-59a1841c6000": {
+          "id": "19c576fb-9cab-4000-ac36-59a1841c6000",
+          "name": "InteractionTrip.mov_ev_tr",
+          "eventId": "c13a6e76-3b70-4000-a531-7f1527a3c000",
+          "targetMediaStateId": "11587564-e5ea-4000-a503-633c9d24f000",
           "type": "No effect",
           "duration": 0
         }
@@ -841,14 +866,7 @@
       "selectableType": "ZONE"
     },
     "selectionEntities": {},
-    "prevSelectionEntities": {
-      "769b23d7-5cee-4000-a6cf-864214511000": {
-        "id": "769b23d7-5cee-4000-a6cf-864214511000",
-        "type": "Event",
-        "selectableType": "TRANSITION",
-        "selectableData": null
-      }
-    },
+    "prevSelectionEntities": {},
     "isEventAdvancedEnabled": false,
     "activeAssetMenuTab": "ASSETS"
   },
@@ -874,13 +892,18 @@
         "id": "769b23d7-5cee-4000-a6cf-864214511000",
         "displayType": "DisplayLabel",
         "labelLocation": "Bottom"
+      },
+      "c13a6e76-3b70-4000-a531-7f1527a3c000": {
+        "id": "c13a6e76-3b70-4000-a531-7f1527a3c000",
+        "displayType": "DisplayLabel",
+        "labelLocation": "Bottom"
       }
     },
     "viewTransformByZoneId": {
       "fe61b6d3-b536-4000-a42c-8251fc5e3000": {
-        "x": 259.60530232525724,
-        "y": 50.1113361011854,
-        "k": 0.47696850700062116
+        "x": 177.5985401231549,
+        "y": 119.75025420412288,
+        "k": 0.4782196531485607
       }
     },
     "isLoaderEnabled": false
