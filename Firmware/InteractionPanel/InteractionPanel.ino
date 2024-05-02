@@ -159,8 +159,8 @@ void sendOSC(int messageID) {
     Serial.println("PILOT" + messageID);
 #endif
 #ifdef COPILOT
-    Udp.write("COPILOT1" + messageID);  // send the bytes to the SLIP stream
-    Serial.println("COPILOT1" + messageID);
+    Udp.write("COPILOT" + messageID);  // send the bytes to the SLIP stream
+    Serial.println("COPILOT" + messageID);
 #endif
   } 
 
