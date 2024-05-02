@@ -7,7 +7,7 @@
 byte mac[] = {
   0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xAA
 };
-IPAddress ip(10, 0, 0, 9);
+IPAddress ip(10, 0, 0, 7);
 
 ArtnetReceiver artnet;
 uint16_t universe1 = 0;  // 0 - 32767

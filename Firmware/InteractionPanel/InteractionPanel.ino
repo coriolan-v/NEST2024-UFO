@@ -98,12 +98,13 @@ void loop() {
       //Serial.print("UID Lenght: ");
       //Serial.println(NFCcard.uidlenght);
       Serial.print("UID: ");
-      for (int i = 0; i < NFCcard.uidlenght; i++) {
-        //Serial.print(NFCcard.uid[i]);
+      for (int i = 0; i < 8; i++) {
+        Serial.print(NFCcard.uid[i]);
         //Serial.print(" ");
         new_cardUID += NFCcard.uid[i];
       }
-      Serial.println(new_cardUID);
+     // Serial.println(new_cardUID);
+     Serial.println();
 
       for(int i = 0; i < 50; i++){
         if(new_cardUID == cardUIDs[i]){
@@ -141,34 +142,34 @@ void loop() {
 void sendOSC(int messageID) {
   //OSCMessage msg();
 
-  Udp.beginPacket(pcIP, pcPort);
+//   Udp.beginPacket(pcIP, pcPort);
 
-  if (messageID == 0) {
-#ifdef PILOT
-    Udp.write("PILOTOUT");  // send the bytes to the SLIP stream
-    Serial.println("PILOTOUT");
-#endif
+//   if (messageID == 0) {
+// #ifdef PILOT
+//     Udp.write("PILOT/0");  // send the bytes to the SLIP stream
+//     Serial.println("PILOT/0");
+// #endif
 
-#ifdef COPILOT
-    Udp.write("COPILOTOUT");  // send the bytes to the SLIP stream
-    Serial.println("COPILOTOUT");
-#endif
-  } else {
-#ifdef PILOT
-    Udp.write("PILOT" + messageID);  // send the bytes to the SLIP stream
-    Serial.println("PILOT" + messageID);
-#endif
-#ifdef COPILOT
-    Udp.write("COPILOT" + messageID);  // send the bytes to the SLIP stream
-    Serial.println("COPILOT" + messageID);
-#endif
-  } 
+// #ifdef COPILOT
+//     Udp.write("COPILOT/0");  // send the bytes to the SLIP stream
+//     Serial.println("COPILOT/0");
+// #endif
+//   } else {
+// #ifdef PILOT
+//     Udp.write("PILOT/" + messageID);  // send the bytes to the SLIP stream
+//     Serial.println("PILOT/" + messageID);
+// #endif
+// #ifdef COPILOT
+//     Udp.write("COPILOT/" + messageID);  // send the bytes to the SLIP stream
+//     Serial.println("COPILOT/" + messageID);
+// #endif
+//   } 
 
-  //msg.send(Udp);    // send the bytes to the SLIP stream
-  Udp.endPacket();  // mark the end of the OSC Packet
-  //msg.empty();      // free space occupied by message
+//   //msg.send(Udp);    // send the bytes to the SLIP stream
+//   Udp.endPacket();  // mark the end of the OSC Packet
+//   //msg.empty();      // free space occupied by message
 
-  Serial.println("Sent UDP message!");
+//   Serial.println("Sent UDP message!");
   //Serial.println(messageToSend);
 }
 
