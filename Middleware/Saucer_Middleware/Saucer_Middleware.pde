@@ -2,7 +2,7 @@ import netP5.*; // Need oscP5 0.9.9
 import oscP5.*; // Need oscP5 0.9.9
 import hypermedia.net.*; // Need UDP 0.1
 
-int processingPort = 5000;
+int processingPort = 5001;
 
 String pcIP = "127.0.0.1";
 //String pcIP = "10.0.0.1";
