@@ -85,7 +85,11 @@ bool cardPresent = false;
 uint8_t new_cardUID[4];
 uint8_t compare_cardUID[4];
 
+unsigned long prevMillis_alive = 0;
+
 void loop() {
+
+  sendAlive();
 
   if (nfc.scan()) {
 
@@ -234,6 +238,7 @@ void sendOSC(int messageID) {
       if(messageID == 3) Udp.write("PILOT/3");
       if(messageID == 4) Udp.write("PILOT/4");
       if(messageID == 5) Udp.write("PILOT/5");
+      if(messageID == 6) Udp.write("ALIVE-PILOT");
 
       //Udp.write("PILOT/" + messageID);  // send the bytes to the SLIP stream
       Serial.println("PILOT/" + messageID);
@@ -244,12 +249,14 @@ void sendOSC(int messageID) {
       if(messageID == 3) Udp.write("COPILOT/3");
       if(messageID == 4) Udp.write("COPILOT/4");
       if(messageID == 5) Udp.write("COPILOT/5");
+      if(messageID == 6) Udp.write("ALIVE-COPILOT");
 
 
       //Udp.write("COPILOT/" + messageID);  // send the bytes to the SLIP stream
       Serial.println("COPILOT/" + messageID);
   #endif
     }
+
 
     //msg.send(Udp);    // send the bytes to the SLIP stream
     Udp.endPacket();  // mark the end of the OSC Packet
@@ -282,3 +289,10 @@ void sendOSC(int messageID) {
 
 //   Serial.print("Sent OSC message :"); Serial.println(udpmessage);
 // }
+
+void sendAlive(){
+if(millis() - prevMillis_alive > 5000){
+  prevMillis_alive = millis();
+  sendOSC(6);
+}
+}

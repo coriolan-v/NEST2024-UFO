@@ -26,7 +26,12 @@ UDP udp;  // define the UDP object
 OscP5 oscP5;
 NetAddress PCIPAddress;
 
+String debugMessage = "Started";
+int debugMessageIndex = 0;
+
 void setup() {
+  size(400,400);
+  textSize(14);
   frameRate(30);
 
   // Setup OSC for communication with ELM
@@ -46,8 +51,16 @@ void setup() {
 int[] stamp = new int[2];
 int[] mode = new int[2];
 boolean sendMessageOnce = false;
+ArrayList<String> messages = new ArrayList<String>();
 
 void draw() {
+  
+  background(0);
+  fill(255);
+  for (int i = 0; i < messages.size(); i++) {
+    text(messages.get(i), 10, 20 + i * 20);
+  }
+  text("Current time: " + hour() + ":" + minute() + ":" + second(), 10, 220);
 
   if (mode[0] > 0 && mode[1] > 0)
   {
@@ -59,6 +72,8 @@ void draw() {
   
 }
 
+String[] messageSplit;
+
 void receive( byte[] data, String ip, int port ) {  // <-- extended handler
 
   // get the "real" message =
@@ -66,12 +81,24 @@ void receive( byte[] data, String ip, int port ) {  // <-- extended handler
   data = subset(data, 0, data.length);
   String message = new String( data );
 
+  debugMessage = hour() + ":" + minute() + ":" + second() + " " + message;
+   addMessage(debugMessage);
+
   // print the result
   println( "receive: \""+message+"\" from "+ip+" on port "+port );
+  
+ // debugMessageIndex++;
+  
 
-  String[] messageSplit = splitTokens(message, "/");
+  try {
+    messageSplit = splitTokens(message, "/"); 
+  } catch (Exception e) {
+    println("ERROR");
+  }
+  
+  
 
-  if (messageSplit.length > 0) {
+  if (messageSplit.length > 1 ) {
     println( "parsed:" + messageSplit[0] + " and " + messageSplit[1]);
 
     // Send the OSC message to ELM
@@ -116,5 +143,16 @@ void receive( byte[] data, String ip, int port ) {  // <-- extended handler
         println("Sent UDP message %s", BrightsignUDP_Copilot_1);
       }
     }
+  }
+}
+
+
+void addMessage(String message) {
+  // Add the new message to the list
+  messages.add(message);
+  
+  // If the list has more than 10 messages, remove the oldest one
+  if (messages.size() > 10) {
+    messages.remove(0);
   }
 }
