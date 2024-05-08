@@ -62,7 +62,11 @@ void setup() {
 // #endif
 //     Udp.endPacket();  // mark the end of the OSC Packet
     delay(1000);
-  }
+  } 
+  
+   
+    Serial.println("Successfully init NFC module");
+  
 
 //   Udp.beginPacket(pcIP, pcPort);
 //   Serial.println("Successfully init NFC module");
