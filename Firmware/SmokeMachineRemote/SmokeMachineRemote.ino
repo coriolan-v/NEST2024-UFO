@@ -1,13 +1,24 @@
 #include <ArtnetEther.h>
+#include <Ethernet.h>
+#include <EthernetUdp.h>
+#include <SPI.h>
+
+EthernetUDP Udp;
 
 #define SMOKE_ON_PIN A0
 #define SMOKE_OFF_PIN 11
 #define LIGHT_OFF_PIN 12
 
+IPAddress pcIP(10, 0, 0, 1);
+const unsigned int pcPort = 5001;
+const unsigned int arduinoPort = 8888;
+
 byte mac[] = {
   0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0x4A
 };
 IPAddress ip(10, 0, 0, 7);
+
+unsigned long prevMillis_alive = 0;
 
 ArtnetReceiver artnet;
 uint16_t universe1 = 0;  // 0 - 32767
@@ -24,6 +35,9 @@ void setup() {
   Serial.begin(115200);
 
   Ethernet.begin(mac, ip);
+
+  //Ethernet.begin(mac, ip);
+  Udp.begin(arduinoPort);
 
   //Check for Ethernet hardware present
   if (Ethernet.hardwareStatus() == EthernetNoHardware) {
@@ -59,6 +73,7 @@ void setup() {
 void loop() {
   artnet.parse();  // check if artnet packet has come and execute callback
 
+  sendAlive();
 }
 
 void callback(const uint8_t *data, uint16_t size, const ArtDmxMetadata &metadata, const ArtNetRemoteInfo &remote) {
@@ -67,21 +82,32 @@ void callback(const uint8_t *data, uint16_t size, const ArtDmxMetadata &metadata
   // for(int i = 0; i < 512; i++){
   //   Serial.print(data[i]);
   //   Serial.print("/");
-    
+
   //   if(data[i] == 255){
   //     Serial.print("it;s: "); Serial.print(i);
   //   }
   // }
- // Serial.println();
-  if(data[282] == 255){
+  // Serial.println();
+  if (data[282] == 255) {
     //Serial.println("ON");
 
     pinMode(SMOKE_ON_PIN, OUTPUT);
     digitalWrite(SMOKE_ON_PIN, LOW);
 
-  } else if(data[282] < 200){
+  } else if (data[282] < 200) {
     //Serial.println("OFF");
 
     pinMode(SMOKE_ON_PIN, INPUT);
+  }
+}
+
+
+void sendAlive() {
+  if (millis() - prevMillis_alive > 15000) {
+    prevMillis_alive = millis();
+    Udp.beginPacket(pcIP, pcPort);
+    Udp.write("ALIVE-SMOKE");
+    Udp.endPacket();
+    Serial.println("Alive");
   }
 }
