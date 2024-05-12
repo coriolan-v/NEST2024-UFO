@@ -8,8 +8,15 @@ String pcIP = "127.0.0.1";
 //String pcIP = "10.0.0.1";
 int pcPortELM = 9001;
 
-String OSCmessage_ELM = "/elm/stages/PortalPlan/live/media";
+//String OSCmessage_ELM = "/elm/stages/PortalPlan/live/media";
+String oscString = "";
+String interaction = "/elm/groups/Inside/performer/";
+String normal = "/elm/groups/Inside/performer/";
+// active: 1
+// play: seuquence ID, stepID
+
 OscMessage oscMessage_ELM;
+int sequenceID[] = {1, 2, 3, 4, 5, 6};
 int mediaGroup[] = {100, 1, 2, 3, 4, 5};
 int mediaDoubleInteraction = 6;
 
@@ -41,10 +48,15 @@ void setup() {
   // Setup UDP to receive UDP from the arduinos
   udp = new UDP(this, processingPort);
   udp.listen( true );
-
-  // test
-  oscMessage_ELM = new OscMessage(OSCmessage_ELM);
-  oscMessage_ELM.add(mediaGroup[0]);
+  
+  // Start the performer
+  oscMessage_ELM = new OscMessage("/elm/groups/Inside/performer/active");
+  oscMessage_ELM.add(1);
+  oscP5.send(oscMessage_ELM, PCIPAddress);
+  
+  // Start normal sequences
+  oscMessage_ELM = new OscMessage("/elm/groups/Inside/performer/play");
+  oscMessage_ELM.add(1);
   oscP5.send(oscMessage_ELM, PCIPAddress);
 }
 
@@ -102,7 +114,7 @@ void receive( byte[] data, String ip, int port ) {  // <-- extended handler
     println( "parsed:" + messageSplit[0] + " and " + messageSplit[1]);
 
     // Send the OSC message to ELM
-    oscMessage_ELM = new OscMessage(OSCmessage_ELM);
+    oscMessage_ELM = new OscMessage(oscString);
     oscMessage_ELM.add(mediaGroup[int(messageSplit[1])]);
     oscP5.send(oscMessage_ELM, PCIPAddress);
 
