@@ -1147,8 +1147,8 @@
       <stage name="Skirt1" id="4a31a43e-c2ab-4f5b-baf7-07e8d2073002" width="1280" height="1280" media="-1" merge="overwrite" hidden="False" locked="False">
         <live intensity="1" crossfadeMs="2000" fadePosition="0" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" speed="1">
           <color red="255" green="181" blue="7" />
-          <zone1 media="9" />
-          <zone2 media="6" />
+          <zone1 media="3" />
+          <zone2 media="94" />
         </live>
         <background path="Screenshot 2024-04-18 at 22.20.08.png" opacity="0.4" />
         <fixtures>
@@ -1247,8 +1247,8 @@
       <stage name="Skirt2" id="a6cc22ec-da05-4e55-a35a-6aa8505512e5" width="1280" height="1280" media="-1" merge="overwrite" hidden="False" locked="False">
         <live intensity="1" crossfadeMs="2000" fadePosition="0" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" speed="1">
           <color red="255" green="187" blue="12" />
-          <zone1 media="9" />
-          <zone2 media="6" />
+          <zone1 media="3" />
+          <zone2 media="94" />
         </live>
         <background path="Screenshot 2024-04-18 at 22.20.08.png" opacity="0.4" />
         <fixtures>
@@ -1389,8 +1389,8 @@
       <stage name="Beacons" id="b922de77-a351-4458-a7e3-aba6cf9e5fa3" width="1280" height="1280" media="-1" merge="overwrite" hidden="False" locked="False">
         <live intensity="1" crossfadeMs="2000" fadePosition="0" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" speed="1">
           <color red="255" green="255" blue="255" />
-          <zone1 media="13" />
-          <zone2 media="19" />
+          <zone1 media="9" />
+          <zone2 media="94" />
         </live>
         <background path="Screenshot 2024-04-18 at 22.20.08.png" scaleX="1.003125" scaleY="1.003125" rotation="-90" opacity="0.179999999999983" />
         <fixtures>
@@ -1465,8 +1465,8 @@
       <stage name="BeaconsColors" id="7f040600-495a-493a-b28d-f064be871bee" width="1280" height="1280" media="-1" merge="multiply" hidden="False" locked="False">
         <live intensity="1" crossfadeMs="2000" fadePosition="0" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" speed="1">
           <color red="255" green="255" blue="255" />
-          <zone1 media="23" />
-          <zone2 media="0" />
+          <zone1 media="2" />
+          <zone2 media="110" />
         </live>
         <background path="Screenshot 2024-04-18 at 22.20.08.png" scaleX="1.003125" scaleY="1.003125" rotation="-90" opacity="0.179999999999983" />
         <fixtures>

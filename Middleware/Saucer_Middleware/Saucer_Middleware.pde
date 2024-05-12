@@ -114,16 +114,18 @@ void receive( byte[] data, String ip, int port ) {  // <-- extended handler
     println("ERROR");
   }
 
-
+  int randStep = 0;
 
   if (messageSplit.length > 1 ) {
     println( "parsed:" + messageSplit[0] + " and " + messageSplit[1]);
 
     // Send the OSC message to ELM
     oscMessage_ELM = new OscMessage("/elm/groups/Inside/performer/play");
+    
+    // if the message is 0 (RFID not present anymore)
     if (messageSplit[1].equals("0")) {
       oscMessage_ELM.add(9);
-      int randStep = int(random(1, 20)); 
+      randStep = int(random(1, 20)); 
       oscMessage_ELM.add(randStep); // if 0, select a random step in the normal sequence
       println("play seq 9, step ", randStep);
     } else {
@@ -132,7 +134,7 @@ void receive( byte[] data, String ip, int port ) {  // <-- extended handler
 
     oscP5.send(oscMessage_ELM, PCIPAddress);
     println(oscMessage_ELM);
-
+    
     // Send the UDP message to Brightsign
     if (messageSplit[0].equals("PILOT")) {
 
@@ -149,7 +151,7 @@ void receive( byte[] data, String ip, int port ) {  // <-- extended handler
         println("Sent UDP message %s", BrightsignUDP_Pilot_1);
       } else {
         udp.send(BrightsignUDP_Pilot_2, Brightsign_Pilot_IP, BrightsignPort);
-        println("Sent UDP message %s", BrightsignUDP_Pilot_2);
+        println("Sent UDP message", BrightsignUDP_Pilot_2);
       }
     } else if (messageSplit[0].equals("COPILOT")) {
       //println("Detected Copilot");
