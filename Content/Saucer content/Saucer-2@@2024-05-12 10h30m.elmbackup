@@ -2404,26 +2404,28 @@
     <stages>
       <stage ID="cbbd4ad2-e592-4bfb-b4ca-1ec31accfe33">
         <grid isVisible="False" squareWidth="20" squareHeight="20" squareOffsetX="0" squareOffsetY="0" />
-        <monitor merged="True" fullscreen="False" x="1166.4" y="270.4" width="349.6" height="263.2" />
+        <monitor merged="True" fullscreen="False" x="1116" y="572" width="349.6" height="263.2" />
       </stage>
       <stage ID="a840e139-b436-492e-9539-54ce6106ad74">
         <grid isVisible="False" squareWidth="20" squareHeight="20" squareOffsetX="0" squareOffsetY="0" />
-        <monitor merged="True" fullscreen="False" x="1172.8" y="544" width="349.6" height="263.2" />
       </stage>
       <stage ID="f2f4e4a0-4032-48d8-9f38-266afb384bce">
         <grid isVisible="False" squareWidth="20" squareHeight="20" squareOffsetX="0" squareOffsetY="0" />
       </stage>
       <stage ID="4a31a43e-c2ab-4f5b-baf7-07e8d2073002">
         <grid isVisible="False" squareWidth="20" squareHeight="20" squareOffsetX="0" squareOffsetY="0" />
+        <monitor merged="True" fullscreen="False" x="939.2" y="379.2" width="349.6" height="263.2" />
       </stage>
       <stage ID="a6cc22ec-da05-4e55-a35a-6aa8505512e5">
         <grid isVisible="False" squareWidth="20" squareHeight="20" squareOffsetX="0" squareOffsetY="0" />
+        <monitor merged="True" fullscreen="False" x="991.2" y="234.4" width="349.6" height="263.2" />
       </stage>
       <stage ID="d4b15f3a-3297-4fe6-8703-ae292abc2cf5">
         <grid isVisible="False" squareWidth="20" squareHeight="20" squareOffsetX="0" squareOffsetY="0" />
       </stage>
       <stage ID="b922de77-a351-4458-a7e3-aba6cf9e5fa3">
         <grid isVisible="False" squareWidth="20" squareHeight="20" squareOffsetX="0" squareOffsetY="0" />
+        <monitor merged="True" fullscreen="False" x="1116" y="572" width="349.6" height="263.2" />
       </stage>
       <stage ID="7f040600-495a-493a-b28d-f064be871bee">
         <grid isVisible="False" squareWidth="20" squareHeight="20" squareOffsetX="0" squareOffsetY="0" />

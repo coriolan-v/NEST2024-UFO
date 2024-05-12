@@ -4,7 +4,7 @@
       <stage name="PortalPlan" id="cbbd4ad2-e592-4bfb-b4ca-1ec31accfe33" width="1280" height="1280" media="-1" merge="overwrite" hidden="False" locked="False">
         <live intensity="1" crossfadeMs="2000" fadePosition="0" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" speed="0.992">
           <color red="255" green="255" blue="255" />
-          <zone1 media="71" />
+          <zone1 media="17" />
           <zone2 media="-1" />
         </live>
         <background path="Screenshot 2024-04-18 at 22.20.08.png" scaleX="1.78671875" scaleY="1.78671875" opacity="0.183076923076937" />
@@ -1145,10 +1145,10 @@
         </schedule>
       </stage>
       <stage name="Skirt1" id="4a31a43e-c2ab-4f5b-baf7-07e8d2073002" width="1280" height="1280" media="-1" merge="overwrite" hidden="False" locked="False">
-        <live intensity="1" crossfadeMs="2000" fadePosition="1" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" speed="1">
+        <live intensity="1" crossfadeMs="2000" fadePosition="0" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" speed="1">
           <color red="255" green="181" blue="7" />
-          <zone1 media="-1" />
-          <zone2 media="3" />
+          <zone1 media="108" />
+          <zone2 media="-1" />
         </live>
         <background path="Screenshot 2024-04-18 at 22.20.08.png" opacity="0.4" />
         <fixtures>
@@ -1245,10 +1245,10 @@
         </schedule>
       </stage>
       <stage name="Skirt2" id="a6cc22ec-da05-4e55-a35a-6aa8505512e5" width="1280" height="1280" media="-1" merge="overwrite" hidden="False" locked="False">
-        <live intensity="1" crossfadeMs="2000" fadePosition="1" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" speed="1">
+        <live intensity="1" crossfadeMs="2000" fadePosition="0" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" speed="1">
           <color red="255" green="187" blue="12" />
-          <zone1 media="-1" />
-          <zone2 media="3" />
+          <zone1 media="20" />
+          <zone2 media="-1" />
         </live>
         <background path="Screenshot 2024-04-18 at 22.20.08.png" opacity="0.4" />
         <fixtures>
@@ -1316,10 +1316,10 @@
         </schedule>
       </stage>
       <stage name="SkirtColors" id="d4b15f3a-3297-4fe6-8703-ae292abc2cf5" width="1280" height="1280" media="-1" merge="multiply" hidden="False" locked="False">
-        <live intensity="1" crossfadeMs="2000" fadePosition="1" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" speed="1">
+        <live intensity="1" crossfadeMs="2000" fadePosition="0" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" speed="1">
           <color red="255" green="255" blue="255" />
-          <zone1 media="-1" />
-          <zone2 media="23" />
+          <zone1 media="23" />
+          <zone2 media="-1" />
         </live>
         <background path="Screenshot 2024-04-18 at 22.20.08.png" opacity="0.4" />
         <fixtures>
@@ -1387,10 +1387,10 @@
         </schedule>
       </stage>
       <stage name="Beacons" id="b922de77-a351-4458-a7e3-aba6cf9e5fa3" width="1280" height="1280" media="-1" merge="overwrite" hidden="False" locked="False">
-        <live intensity="1" crossfadeMs="2000" fadePosition="1" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" speed="1">
+        <live intensity="1" crossfadeMs="2000" fadePosition="0" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" speed="1">
           <color red="255" green="255" blue="255" />
-          <zone1 media="-1" />
-          <zone2 media="9" />
+          <zone1 media="94" />
+          <zone2 media="-1" />
         </live>
         <background path="Screenshot 2024-04-18 at 22.20.08.png" scaleX="1.003125" scaleY="1.003125" rotation="-90" opacity="0.179999999999983" />
         <fixtures>
@@ -1463,10 +1463,10 @@
         </schedule>
       </stage>
       <stage name="BeaconsColors" id="7f040600-495a-493a-b28d-f064be871bee" width="1280" height="1280" media="-1" merge="multiply" hidden="False" locked="False">
-        <live intensity="1" crossfadeMs="2000" fadePosition="1" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" speed="1">
+        <live intensity="1" crossfadeMs="2000" fadePosition="0" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" speed="1">
           <color red="255" green="255" blue="255" />
-          <zone1 media="-1" />
-          <zone2 media="2" />
+          <zone1 media="23" />
+          <zone2 media="-1" />
         </live>
         <background path="Screenshot 2024-04-18 at 22.20.08.png" scaleX="1.003125" scaleY="1.003125" rotation="-90" opacity="0.179999999999983" />
         <fixtures>
@@ -1539,10 +1539,10 @@
         </schedule>
       </stage>
       <stage name="Smoke" id="34cb46b6-a393-4b97-94f4-5c1cee60f9cd" width="1280" height="1280" media="-1" merge="overwrite" hidden="False" locked="False">
-        <live intensity="1" crossfadeMs="2000" fadePosition="0" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" speed="1">
+        <live intensity="1" crossfadeMs="2000" fadePosition="1" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" speed="1">
           <color red="255" green="255" blue="255" />
-          <zone1 media="-1" />
-          <zone2 media="-1" />
+          <zone1 media="119" />
+          <zone2 media="120" />
         </live>
         <fixtures>
           <fixture group="SMOKE" group2="" ledType="RGB" dmxProtocol="ArtNet" startUniverse="0" startAddress="282" breakUniverseAfter="0">
@@ -1566,7 +1566,7 @@
             <stage ID="34cb46b6-a393-4b97-94f4-5c1cee60f9cd" />
           </stages>
           <sequences>
-            <sequence id="0" name="Smoke machine schedule 10s every 30 mins from 4pm">
+            <sequence id="0" name="Smoke machine schedule">
               <steps>
                 <step name="On" durationMs="10000">
                   <stages>
@@ -1590,399 +1590,7 @@
                 </step>
               </steps>
               <triggers>
-                <schedule isEnabled="True" startTime="57600000" startTimeRelativeMode="Midnight" manualDurationMs="54000000" startMonth="1" startDayOfMonth="1" endMonth="12" endDayOfMonth="31" activeDays="1111111" isLooping="True" />
-              </triggers>
-            </sequence>
-          </sequences>
-          <performer nbColumns="8" sequencePlayMode="loop" autoGo="True" tapTempoDivider="1" overrideValueTransitionTimeMs="200">
-            <colors>
-              <preset red="255" green="255" blue="255" />
-              <preset red="127" green="255" blue="0" />
-              <preset red="0" green="255" blue="0" />
-              <preset red="0" green="255" blue="255" />
-              <preset red="0" green="128" blue="255" />
-              <preset red="0" green="0" blue="255" />
-              <preset red="255" green="0" blue="0" />
-              <preset red="255" green="128" blue="0" />
-              <preset red="255" green="255" blue="0" />
-              <preset red="255" green="0" blue="127" />
-              <preset red="255" green="0" blue="255" />
-              <preset red="128" green="0" blue="255" />
-            </colors>
-            <opacities>
-              <preset value="100" />
-              <preset value="80" />
-              <preset value="60" />
-              <preset value="40" />
-              <preset value="20" />
-            </opacities>
-            <speeds>
-              <preset value="5" />
-              <preset value="2" />
-              <preset value="1" />
-              <preset value="0.5" />
-              <preset value="0.2" />
-            </speeds>
-          </performer>
-        </group>
-        <group name="Outside" id="51bd3582-a2f2-483d-ad9b-ee57f6712ab5">
-          <stages>
-            <stage ID="4a31a43e-c2ab-4f5b-baf7-07e8d2073002" />
-            <stage ID="a6cc22ec-da05-4e55-a35a-6aa8505512e5" />
-            <stage ID="d4b15f3a-3297-4fe6-8703-ae292abc2cf5" />
-            <stage ID="b922de77-a351-4458-a7e3-aba6cf9e5fa3" />
-            <stage ID="7f040600-495a-493a-b28d-f064be871bee" />
-          </stages>
-          <sequences>
-            <sequence id="0" name="">
-              <steps>
-                <step name="" durationMs="120000">
-                  <stages>
-                    <stage stageID="4a31a43e-c2ab-4f5b-baf7-07e8d2073002" mediaID="3" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="181" blue="7" />
-                    </stage>
-                    <stage stageID="a6cc22ec-da05-4e55-a35a-6aa8505512e5" mediaID="3" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="187" blue="12" />
-                    </stage>
-                    <stage stageID="d4b15f3a-3297-4fe6-8703-ae292abc2cf5" mediaID="23" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="255" blue="255" />
-                    </stage>
-                    <stage stageID="b922de77-a351-4458-a7e3-aba6cf9e5fa3" mediaID="9" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="255" blue="255" />
-                    </stage>
-                    <stage stageID="7f040600-495a-493a-b28d-f064be871bee" mediaID="2" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="255" blue="255" />
-                    </stage>
-                  </stages>
-                  <medias>
-                    <media mediaID="3" configurationXml="&lt;node size1=&quot;0.05&quot; size2=&quot;0.3&quot; speed=&quot;1&quot; timeOffset=&quot;0&quot; toggle1=&quot;False&quot; direction=&quot;right&quot;&gt;&lt;colors&gt;&lt;color red=&quot;255&quot; green=&quot;255&quot; blue=&quot;255&quot; /&gt;&lt;/colors&gt;&lt;/node&gt;" />
-                    <media mediaID="9" configurationXml="&lt;node speed=&quot;1&quot; timeOffset=&quot;0&quot;&gt;&lt;colors&gt;&lt;color red=&quot;255&quot; green=&quot;255&quot; blue=&quot;255&quot; /&gt;&lt;/colors&gt;&lt;/node&gt;" />
-                    <media mediaID="2" configurationXml="&lt;node size1=&quot;1&quot; speed=&quot;1.69484536082474&quot; direction=&quot;up&quot;&gt;&lt;colors&gt;&lt;color red=&quot;72&quot; green=&quot;0&quot; blue=&quot;255&quot; /&gt;&lt;color red=&quot;0&quot; green=&quot;0&quot; blue=&quot;0&quot; /&gt;&lt;color red=&quot;71&quot; green=&quot;255&quot; blue=&quot;222&quot; /&gt;&lt;/colors&gt;&lt;/node&gt;" />
-                  </medias>
-                </step>
-                <step name="" durationMs="120000">
-                  <stages>
-                    <stage stageID="4a31a43e-c2ab-4f5b-baf7-07e8d2073002" mediaID="6" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="181" blue="7" />
-                    </stage>
-                    <stage stageID="a6cc22ec-da05-4e55-a35a-6aa8505512e5" mediaID="6" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="187" blue="12" />
-                    </stage>
-                    <stage stageID="d4b15f3a-3297-4fe6-8703-ae292abc2cf5" mediaID="23" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="255" blue="255" />
-                    </stage>
-                    <stage stageID="b922de77-a351-4458-a7e3-aba6cf9e5fa3" mediaID="19" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="255" blue="255" />
-                    </stage>
-                    <stage stageID="7f040600-495a-493a-b28d-f064be871bee" mediaID="0" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="255" blue="255" />
-                    </stage>
-                  </stages>
-                  <medias>
-                    <media mediaID="6" configurationXml="&lt;node size1=&quot;0.09&quot; speed=&quot;1&quot; timeOffset=&quot;0&quot;&gt;&lt;colors&gt;&lt;color red=&quot;255&quot; green=&quot;255&quot; blue=&quot;255&quot; /&gt;&lt;/colors&gt;&lt;/node&gt;" />
-                    <media mediaID="19" configurationXml="&lt;node nbItems2=&quot;1&quot; size1=&quot;5.71176470588235&quot; size2=&quot;5.5&quot; size3=&quot;0&quot; size4=&quot;0&quot; size5=&quot;0&quot; size6=&quot;0&quot; speed=&quot;1&quot; timeOffset=&quot;0&quot; tileX=&quot;none&quot; tileY=&quot;none&quot; color=&quot;normal&quot;&gt;&lt;colors&gt;&lt;color red=&quot;255&quot; green=&quot;255&quot; blue=&quot;255&quot; /&gt;&lt;/colors&gt;&lt;/node&gt;" />
-                    <media mediaID="0" configurationXml="&lt;node size1=&quot;1&quot; speed=&quot;1&quot; direction=&quot;rotate&quot;&gt;&lt;colors&gt;&lt;color red=&quot;255&quot; green=&quot;0&quot; blue=&quot;210&quot; /&gt;&lt;color red=&quot;255&quot; green=&quot;165&quot; blue=&quot;0&quot; /&gt;&lt;/colors&gt;&lt;/node&gt;" />
-                  </medias>
-                </step>
-                <step name="" durationMs="120000">
-                  <stages>
-                    <stage stageID="4a31a43e-c2ab-4f5b-baf7-07e8d2073002" mediaID="9" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="181" blue="7" />
-                    </stage>
-                    <stage stageID="a6cc22ec-da05-4e55-a35a-6aa8505512e5" mediaID="9" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="187" blue="12" />
-                    </stage>
-                    <stage stageID="d4b15f3a-3297-4fe6-8703-ae292abc2cf5" mediaID="23" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="255" blue="255" />
-                    </stage>
-                    <stage stageID="b922de77-a351-4458-a7e3-aba6cf9e5fa3" mediaID="13" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="255" blue="255" />
-                    </stage>
-                    <stage stageID="7f040600-495a-493a-b28d-f064be871bee" mediaID="23" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="255" blue="255" />
-                    </stage>
-                  </stages>
-                  <medias>
-                    <media mediaID="9" configurationXml="&lt;node speed=&quot;1&quot; timeOffset=&quot;0&quot;&gt;&lt;colors&gt;&lt;color red=&quot;255&quot; green=&quot;255&quot; blue=&quot;255&quot; /&gt;&lt;/colors&gt;&lt;/node&gt;" />
-                    <media mediaID="13" configurationXml="&lt;node size1=&quot;1&quot; speed=&quot;1&quot; direction=&quot;rotate&quot;&gt;&lt;colors&gt;&lt;color red=&quot;255&quot; green=&quot;230&quot; blue=&quot;86&quot; /&gt;&lt;color red=&quot;255&quot; green=&quot;165&quot; blue=&quot;0&quot; /&gt;&lt;color red=&quot;0&quot; green=&quot;0&quot; blue=&quot;0&quot; /&gt;&lt;/colors&gt;&lt;/node&gt;" />
-                  </medias>
-                </step>
-                <step name="" durationMs="120000">
-                  <stages>
-                    <stage stageID="4a31a43e-c2ab-4f5b-baf7-07e8d2073002" mediaID="18" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="181" blue="7" />
-                    </stage>
-                    <stage stageID="a6cc22ec-da05-4e55-a35a-6aa8505512e5" mediaID="20" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="187" blue="12" />
-                    </stage>
-                    <stage stageID="d4b15f3a-3297-4fe6-8703-ae292abc2cf5" mediaID="23" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="255" blue="255" />
-                    </stage>
-                    <stage stageID="b922de77-a351-4458-a7e3-aba6cf9e5fa3" mediaID="24" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="255" blue="255" />
-                    </stage>
-                    <stage stageID="7f040600-495a-493a-b28d-f064be871bee" mediaID="23" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="255" blue="255" />
-                    </stage>
-                  </stages>
-                  <medias>
-                    <media mediaID="18" configurationXml="&lt;node nbItems2=&quot;1&quot; size1=&quot;2.5&quot; size2=&quot;5.5&quot; size3=&quot;0&quot; size4=&quot;0&quot; size5=&quot;0&quot; size6=&quot;0&quot; speed=&quot;-1&quot; timeOffset=&quot;0&quot; tileX=&quot;none&quot; tileY=&quot;none&quot; color=&quot;normal&quot;&gt;&lt;colors&gt;&lt;color red=&quot;255&quot; green=&quot;255&quot; blue=&quot;255&quot; /&gt;&lt;/colors&gt;&lt;/node&gt;" />
-                    <media mediaID="20" configurationXml="&lt;node nbItems2=&quot;1&quot; size1=&quot;2.5&quot; size2=&quot;5.5&quot; size3=&quot;0&quot; size4=&quot;0&quot; size5=&quot;0&quot; size6=&quot;0&quot; speed=&quot;1&quot; timeOffset=&quot;0&quot; tileX=&quot;none&quot; tileY=&quot;none&quot; color=&quot;normal&quot;&gt;&lt;colors&gt;&lt;color red=&quot;255&quot; green=&quot;255&quot; blue=&quot;255&quot; /&gt;&lt;/colors&gt;&lt;/node&gt;" />
-                    <media mediaID="24" configurationXml="&lt;node nbItems=&quot;3&quot; size1=&quot;5.5&quot; size3=&quot;-3.77777777777778&quot; size4=&quot;0&quot; size5=&quot;0&quot; size6=&quot;0&quot; size7=&quot;156.417478070715&quot; speed=&quot;1&quot; timeOffset=&quot;0&quot; tileX=&quot;none&quot; tileY=&quot;none&quot; color=&quot;normal&quot;&gt;&lt;colors&gt;&lt;color red=&quot;255&quot; green=&quot;255&quot; blue=&quot;255&quot; /&gt;&lt;/colors&gt;&lt;/node&gt;" />
-                  </medias>
-                </step>
-                <step name="" durationMs="120000">
-                  <stages>
-                    <stage stageID="4a31a43e-c2ab-4f5b-baf7-07e8d2073002" mediaID="108" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="236" blue="246" />
-                    </stage>
-                    <stage stageID="a6cc22ec-da05-4e55-a35a-6aa8505512e5" mediaID="108" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="255" blue="255" />
-                    </stage>
-                    <stage stageID="d4b15f3a-3297-4fe6-8703-ae292abc2cf5" mediaID="110" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="255" blue="255" />
-                    </stage>
-                    <stage stageID="b922de77-a351-4458-a7e3-aba6cf9e5fa3" mediaID="106" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="255" blue="255" />
-                    </stage>
-                    <stage stageID="7f040600-495a-493a-b28d-f064be871bee" mediaID="107" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="255" blue="255" />
-                    </stage>
-                  </stages>
-                  <medias>
-                    <media mediaID="108" configurationXml="&lt;node nbItems2=&quot;40&quot; size1=&quot;5.5&quot; size2=&quot;5.5&quot; size3=&quot;0&quot; size4=&quot;0&quot; size5=&quot;0&quot; size6=&quot;0&quot; speed=&quot;1&quot; timeOffset=&quot;0&quot; tileX=&quot;none&quot; tileY=&quot;none&quot; color=&quot;normal&quot;&gt;&lt;colors&gt;&lt;color red=&quot;255&quot; green=&quot;255&quot; blue=&quot;255&quot; /&gt;&lt;/colors&gt;&lt;/node&gt;" />
-                    <media mediaID="110" configurationXml="&lt;node size1=&quot;1&quot; speed=&quot;1&quot; direction=&quot;rotate&quot;&gt;&lt;colors&gt;&lt;color red=&quot;255&quot; green=&quot;0&quot; blue=&quot;230&quot; /&gt;&lt;color red=&quot;141&quot; green=&quot;255&quot; blue=&quot;101&quot; /&gt;&lt;/colors&gt;&lt;/node&gt;" />
-                    <media mediaID="106" configurationXml="&lt;node nbItems=&quot;3&quot; size1=&quot;4.86470588235295&quot; size3=&quot;0&quot; size4=&quot;0&quot; size5=&quot;0&quot; size6=&quot;0&quot; speed=&quot;1&quot; timeOffset=&quot;0&quot; tileX=&quot;none&quot; tileY=&quot;none&quot; color=&quot;grayscale&quot;&gt;&lt;colors&gt;&lt;color red=&quot;255&quot; green=&quot;255&quot; blue=&quot;255&quot; /&gt;&lt;/colors&gt;&lt;/node&gt;" />
-                    <media mediaID="107" configurationXml="&lt;node size1=&quot;1&quot; toggle1=&quot;False&quot;&gt;&lt;colors&gt;&lt;color red=&quot;0&quot; green=&quot;0&quot; blue=&quot;255&quot; /&gt;&lt;color red=&quot;0&quot; green=&quot;0&quot; blue=&quot;255&quot; /&gt;&lt;/colors&gt;&lt;/node&gt;" />
-                  </medias>
-                </step>
-                <step name="" durationMs="120000">
-                  <stages>
-                    <stage stageID="4a31a43e-c2ab-4f5b-baf7-07e8d2073002" mediaID="104" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="236" blue="246" />
-                    </stage>
-                    <stage stageID="a6cc22ec-da05-4e55-a35a-6aa8505512e5" mediaID="104" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="255" blue="255" />
-                    </stage>
-                    <stage stageID="d4b15f3a-3297-4fe6-8703-ae292abc2cf5" mediaID="110" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="255" blue="255" />
-                    </stage>
-                    <stage stageID="b922de77-a351-4458-a7e3-aba6cf9e5fa3" mediaID="28" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="255" blue="255" />
-                    </stage>
-                    <stage stageID="7f040600-495a-493a-b28d-f064be871bee" mediaID="110" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="255" blue="255" />
-                    </stage>
-                  </stages>
-                  <medias>
-                    <media mediaID="104" configurationXml="&lt;node size2=&quot;0&quot; size3=&quot;0&quot; size4=&quot;0&quot; size5=&quot;0&quot; size6=&quot;0&quot; speed=&quot;1.5&quot; timeOffset=&quot;0&quot; toggle1=&quot;False&quot; toggle2=&quot;False&quot; /&gt;" />
-                    <media mediaID="110" configurationXml="&lt;node size1=&quot;1&quot; speed=&quot;1&quot; direction=&quot;rotate&quot;&gt;&lt;colors&gt;&lt;color red=&quot;255&quot; green=&quot;0&quot; blue=&quot;230&quot; /&gt;&lt;color red=&quot;141&quot; green=&quot;255&quot; blue=&quot;101&quot; /&gt;&lt;/colors&gt;&lt;/node&gt;" />
-                    <media mediaID="28" configurationXml="&lt;node nbItems=&quot;2&quot; size1=&quot;1.7&quot; size3=&quot;-0.666666666666666&quot; size4=&quot;0&quot; size5=&quot;0&quot; size6=&quot;0&quot; speed=&quot;2&quot; timeOffset=&quot;0&quot; tileX=&quot;none&quot; tileY=&quot;none&quot; color=&quot;normal&quot;&gt;&lt;colors&gt;&lt;color red=&quot;255&quot; green=&quot;255&quot; blue=&quot;255&quot; /&gt;&lt;/colors&gt;&lt;/node&gt;" />
-                  </medias>
-                </step>
-                <step name="" durationMs="120000">
-                  <stages>
-                    <stage stageID="4a31a43e-c2ab-4f5b-baf7-07e8d2073002" mediaID="94" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="236" blue="246" />
-                    </stage>
-                    <stage stageID="a6cc22ec-da05-4e55-a35a-6aa8505512e5" mediaID="94" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="255" blue="255" />
-                    </stage>
-                    <stage stageID="d4b15f3a-3297-4fe6-8703-ae292abc2cf5" mediaID="111" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="255" blue="255" />
-                    </stage>
-                    <stage stageID="b922de77-a351-4458-a7e3-aba6cf9e5fa3" mediaID="94" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="255" blue="255" />
-                    </stage>
-                    <stage stageID="7f040600-495a-493a-b28d-f064be871bee" mediaID="110" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="255" blue="255" />
-                    </stage>
-                  </stages>
-                  <medias>
-                    <media mediaID="94" configurationXml="&lt;node nbItems=&quot;2&quot; size1=&quot;1.89999999999999&quot; size3=&quot;0&quot; size4=&quot;0&quot; size5=&quot;0&quot; size6=&quot;0&quot; speed=&quot;1&quot; timeOffset=&quot;0&quot; tileX=&quot;none&quot; tileY=&quot;none&quot; color=&quot;normal&quot;&gt;&lt;colors&gt;&lt;color red=&quot;255&quot; green=&quot;255&quot; blue=&quot;255&quot; /&gt;&lt;/colors&gt;&lt;/node&gt;" />
-                    <media mediaID="110" configurationXml="&lt;node size1=&quot;1&quot; speed=&quot;1&quot; direction=&quot;rotate&quot;&gt;&lt;colors&gt;&lt;color red=&quot;255&quot; green=&quot;0&quot; blue=&quot;230&quot; /&gt;&lt;color red=&quot;141&quot; green=&quot;255&quot; blue=&quot;101&quot; /&gt;&lt;/colors&gt;&lt;/node&gt;" />
-                  </medias>
-                </step>
-              </steps>
-              <triggers>
-                <schedule isEnabled="True" startTime="0" startTimeRelativeMode="Midnight" startMonth="1" startDayOfMonth="1" endMonth="12" endDayOfMonth="31" activeDays="1111111" isLooping="True" />
-              </triggers>
-            </sequence>
-          </sequences>
-          <performer nbColumns="8" sequencePlayMode="loop" autoGo="True" tapTempoDivider="1" overrideValueTransitionTimeMs="200">
-            <colors>
-              <preset red="255" green="255" blue="255" />
-              <preset red="127" green="255" blue="0" />
-              <preset red="0" green="255" blue="0" />
-              <preset red="0" green="255" blue="255" />
-              <preset red="0" green="128" blue="255" />
-              <preset red="0" green="0" blue="255" />
-              <preset red="255" green="0" blue="0" />
-              <preset red="255" green="128" blue="0" />
-              <preset red="255" green="255" blue="0" />
-              <preset red="255" green="0" blue="127" />
-              <preset red="255" green="0" blue="255" />
-              <preset red="128" green="0" blue="255" />
-            </colors>
-            <opacities>
-              <preset value="100" />
-              <preset value="80" />
-              <preset value="60" />
-              <preset value="40" />
-              <preset value="20" />
-            </opacities>
-            <speeds>
-              <preset value="5" />
-              <preset value="2" />
-              <preset value="1" />
-              <preset value="0.5" />
-              <preset value="0.2" />
-            </speeds>
-          </performer>
-        </group>
-        <group name="Inside" id="d4cba3a9-2a7c-447a-831a-cfdc9b024b4f">
-          <stages>
-            <stage ID="cbbd4ad2-e592-4bfb-b4ca-1ec31accfe33" />
-            <stage ID="a840e139-b436-492e-9539-54ce6106ad74" />
-            <stage ID="f2f4e4a0-4032-48d8-9f38-266afb384bce" />
-          </stages>
-          <sequences>
-            <sequence id="0" name="Normal scenes">
-              <steps>
-                <step name="" durationMs="10000">
-                  <stages>
-                    <stage stageID="cbbd4ad2-e592-4bfb-b4ca-1ec31accfe33" mediaID="71" opacity="1" speed="0.992" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="255" blue="255" />
-                    </stage>
-                    <stage stageID="a840e139-b436-492e-9539-54ce6106ad74" mediaID="111" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="255" blue="255" />
-                    </stage>
-                    <stage stageID="f2f4e4a0-4032-48d8-9f38-266afb384bce" mediaID="112" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="251" green="226" blue="255" />
-                    </stage>
-                  </stages>
-                  <medias>
-                    <media mediaID="71" configurationXml="&lt;node nbItems=&quot;1&quot; size1=&quot;3.65294117647059&quot; size3=&quot;0&quot; size4=&quot;0&quot; size5=&quot;0&quot; size6=&quot;0&quot; speed=&quot;0.423921568627449&quot; timeOffset=&quot;0&quot; tileX=&quot;none&quot; tileY=&quot;none&quot; color=&quot;normal&quot;&gt;&lt;colors&gt;&lt;color red=&quot;255&quot; green=&quot;255&quot; blue=&quot;255&quot; /&gt;&lt;/colors&gt;&lt;/node&gt;" />
-                  </medias>
-                </step>
-              </steps>
-              <triggers>
-                <schedule isEnabled="True" startTime="0" startTimeRelativeMode="Midnight" startMonth="1" startDayOfMonth="1" endMonth="12" endDayOfMonth="31" activeDays="1111111" isLooping="True" />
-              </triggers>
-            </sequence>
-            <sequence id="1" name="Group 1">
-              <steps>
-                <step name="" durationMs="10000">
-                  <stages>
-                    <stage stageID="cbbd4ad2-e592-4bfb-b4ca-1ec31accfe33" mediaID="71" opacity="1" speed="0.992" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="255" blue="255" />
-                    </stage>
-                    <stage stageID="a840e139-b436-492e-9539-54ce6106ad74" mediaID="111" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="255" blue="255" />
-                    </stage>
-                    <stage stageID="f2f4e4a0-4032-48d8-9f38-266afb384bce" mediaID="112" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="251" green="226" blue="255" />
-                    </stage>
-                  </stages>
-                  <medias>
-                    <media mediaID="71" configurationXml="&lt;node nbItems=&quot;1&quot; size1=&quot;3.65294117647059&quot; size3=&quot;0&quot; size4=&quot;0&quot; size5=&quot;0&quot; size6=&quot;0&quot; speed=&quot;0.423921568627449&quot; timeOffset=&quot;0&quot; tileX=&quot;none&quot; tileY=&quot;none&quot; color=&quot;normal&quot;&gt;&lt;colors&gt;&lt;color red=&quot;255&quot; green=&quot;255&quot; blue=&quot;255&quot; /&gt;&lt;/colors&gt;&lt;/node&gt;" />
-                  </medias>
-                </step>
-              </steps>
-              <triggers>
-                <schedule isEnabled="False" startTime="0" startTimeRelativeMode="Midnight" startMonth="1" startDayOfMonth="1" endMonth="12" endDayOfMonth="31" activeDays="1111111" isLooping="True" />
-              </triggers>
-            </sequence>
-            <sequence id="2" name="Group 2">
-              <steps>
-                <step name="" durationMs="10000">
-                  <stages>
-                    <stage stageID="cbbd4ad2-e592-4bfb-b4ca-1ec31accfe33" mediaID="71" opacity="1" speed="0.992" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="255" blue="255" />
-                    </stage>
-                    <stage stageID="a840e139-b436-492e-9539-54ce6106ad74" mediaID="111" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="255" blue="255" />
-                    </stage>
-                    <stage stageID="f2f4e4a0-4032-48d8-9f38-266afb384bce" mediaID="112" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="251" green="226" blue="255" />
-                    </stage>
-                  </stages>
-                  <medias>
-                    <media mediaID="71" configurationXml="&lt;node nbItems=&quot;1&quot; size1=&quot;3.65294117647059&quot; size3=&quot;0&quot; size4=&quot;0&quot; size5=&quot;0&quot; size6=&quot;0&quot; speed=&quot;0.423921568627449&quot; timeOffset=&quot;0&quot; tileX=&quot;none&quot; tileY=&quot;none&quot; color=&quot;normal&quot;&gt;&lt;colors&gt;&lt;color red=&quot;255&quot; green=&quot;255&quot; blue=&quot;255&quot; /&gt;&lt;/colors&gt;&lt;/node&gt;" />
-                  </medias>
-                </step>
-              </steps>
-              <triggers>
-                <schedule isEnabled="False" startTime="0" startTimeRelativeMode="Midnight" startMonth="1" startDayOfMonth="1" endMonth="12" endDayOfMonth="31" activeDays="1111111" isLooping="True" />
-              </triggers>
-            </sequence>
-            <sequence id="3" name="Group 3">
-              <steps>
-                <step name="" durationMs="10000">
-                  <stages>
-                    <stage stageID="cbbd4ad2-e592-4bfb-b4ca-1ec31accfe33" mediaID="71" opacity="1" speed="0.992" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="255" blue="255" />
-                    </stage>
-                    <stage stageID="a840e139-b436-492e-9539-54ce6106ad74" mediaID="111" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="255" blue="255" />
-                    </stage>
-                    <stage stageID="f2f4e4a0-4032-48d8-9f38-266afb384bce" mediaID="112" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="251" green="226" blue="255" />
-                    </stage>
-                  </stages>
-                  <medias>
-                    <media mediaID="71" configurationXml="&lt;node nbItems=&quot;1&quot; size1=&quot;3.65294117647059&quot; size3=&quot;0&quot; size4=&quot;0&quot; size5=&quot;0&quot; size6=&quot;0&quot; speed=&quot;0.423921568627449&quot; timeOffset=&quot;0&quot; tileX=&quot;none&quot; tileY=&quot;none&quot; color=&quot;normal&quot;&gt;&lt;colors&gt;&lt;color red=&quot;255&quot; green=&quot;255&quot; blue=&quot;255&quot; /&gt;&lt;/colors&gt;&lt;/node&gt;" />
-                  </medias>
-                </step>
-              </steps>
-              <triggers>
-                <schedule isEnabled="False" startTime="0" startTimeRelativeMode="Midnight" startMonth="1" startDayOfMonth="1" endMonth="12" endDayOfMonth="31" activeDays="1111111" isLooping="True" />
-              </triggers>
-            </sequence>
-            <sequence id="4" name="Group 4">
-              <steps>
-                <step name="" durationMs="10000">
-                  <stages>
-                    <stage stageID="cbbd4ad2-e592-4bfb-b4ca-1ec31accfe33" mediaID="71" opacity="1" speed="0.992" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="255" blue="255" />
-                    </stage>
-                    <stage stageID="a840e139-b436-492e-9539-54ce6106ad74" mediaID="111" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="255" blue="255" />
-                    </stage>
-                    <stage stageID="f2f4e4a0-4032-48d8-9f38-266afb384bce" mediaID="112" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="251" green="226" blue="255" />
-                    </stage>
-                  </stages>
-                  <medias>
-                    <media mediaID="71" configurationXml="&lt;node nbItems=&quot;1&quot; size1=&quot;3.65294117647059&quot; size3=&quot;0&quot; size4=&quot;0&quot; size5=&quot;0&quot; size6=&quot;0&quot; speed=&quot;0.423921568627449&quot; timeOffset=&quot;0&quot; tileX=&quot;none&quot; tileY=&quot;none&quot; color=&quot;normal&quot;&gt;&lt;colors&gt;&lt;color red=&quot;255&quot; green=&quot;255&quot; blue=&quot;255&quot; /&gt;&lt;/colors&gt;&lt;/node&gt;" />
-                  </medias>
-                </step>
-              </steps>
-              <triggers>
-                <schedule isEnabled="False" startTime="0" startTimeRelativeMode="Midnight" startMonth="1" startDayOfMonth="1" endMonth="12" endDayOfMonth="31" activeDays="1111111" isLooping="True" />
-              </triggers>
-            </sequence>
-            <sequence id="5" name="Group 5">
-              <steps>
-                <step name="" durationMs="10000">
-                  <stages>
-                    <stage stageID="cbbd4ad2-e592-4bfb-b4ca-1ec31accfe33" mediaID="71" opacity="1" speed="0.992" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="255" blue="255" />
-                    </stage>
-                    <stage stageID="a840e139-b436-492e-9539-54ce6106ad74" mediaID="111" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="255" green="255" blue="255" />
-                    </stage>
-                    <stage stageID="f2f4e4a0-4032-48d8-9f38-266afb384bce" mediaID="112" opacity="1" speed="1" transitionTimeMs="2000" mixEffect="CrossFade" mixEffectPositionTransform="sigmoid" isRobotControlled="False">
-                      <colorFilter red="251" green="226" blue="255" />
-                    </stage>
-                  </stages>
-                  <medias>
-                    <media mediaID="71" configurationXml="&lt;node nbItems=&quot;1&quot; size1=&quot;3.65294117647059&quot; size3=&quot;0&quot; size4=&quot;0&quot; size5=&quot;0&quot; size6=&quot;0&quot; speed=&quot;0.423921568627449&quot; timeOffset=&quot;0&quot; tileX=&quot;none&quot; tileY=&quot;none&quot; color=&quot;normal&quot;&gt;&lt;colors&gt;&lt;color red=&quot;255&quot; green=&quot;255&quot; blue=&quot;255&quot; /&gt;&lt;/colors&gt;&lt;/node&gt;" />
-                  </medias>
-                </step>
-              </steps>
-              <triggers>
-                <schedule isEnabled="False" startTime="0" startTimeRelativeMode="Midnight" startMonth="1" startDayOfMonth="1" endMonth="12" endDayOfMonth="31" activeDays="1111111" isLooping="True" />
+                <schedule isEnabled="True" startTime="57600000" startTimeRelativeMode="Midnight" startMonth="1" startDayOfMonth="1" endMonth="12" endDayOfMonth="31" activeDays="1111111" isLooping="True" />
               </triggers>
             </sequence>
           </sequences>
@@ -2232,7 +1840,7 @@
           <source relativePath="@glsl&lt;node name=&quot;particles party.frag&quot; nbItems=&quot;3&quot; size1=&quot;4.36585365853659&quot; size3=&quot;0&quot; size4=&quot;0&quot; size5=&quot;0&quot; size6=&quot;0&quot; speed=&quot;1&quot; timeOffset=&quot;0&quot; tileX=&quot;none&quot; tileY=&quot;none&quot; color=&quot;grayscale&quot;&gt;&lt;colors&gt;&lt;color red=&quot;255&quot; green=&quot;255&quot; blue=&quot;255&quot; /&gt;&lt;/colors&gt;&lt;remote /&gt;&lt;/node&gt;" type="7" />
         </slot>
         <slot id="71" name="Particles radial">
-          <source relativePath="@glsl&lt;node name=&quot;particles radial.frag&quot; nbItems=&quot;1&quot; size1=&quot;3.65294117647059&quot; size3=&quot;0&quot; size4=&quot;0&quot; size5=&quot;0&quot; size6=&quot;0&quot; speed=&quot;0.423921568627449&quot; timeOffset=&quot;0&quot; tileX=&quot;none&quot; tileY=&quot;none&quot; color=&quot;normal&quot;&gt;&lt;colors&gt;&lt;color red=&quot;255&quot; green=&quot;255&quot; blue=&quot;255&quot; /&gt;&lt;/colors&gt;&lt;remote /&gt;&lt;/node&gt;" type="7" />
+          <source relativePath="@glsl&lt;node name=&quot;particles radial.frag&quot; nbItems=&quot;1&quot; size1=&quot;4.35882352941177&quot; size3=&quot;0&quot; size4=&quot;0&quot; size5=&quot;0&quot; size6=&quot;0&quot; speed=&quot;0.423921568627449&quot; timeOffset=&quot;0&quot; tileX=&quot;none&quot; tileY=&quot;none&quot; color=&quot;normal&quot;&gt;&lt;colors&gt;&lt;color red=&quot;255&quot; green=&quot;255&quot; blue=&quot;255&quot; /&gt;&lt;/colors&gt;&lt;remote /&gt;&lt;/node&gt;" type="7" />
         </slot>
         <slot id="72" name="Particles stellar">
           <source relativePath="@glsl&lt;node name=&quot;particles stellar.frag&quot; nbItems=&quot;3&quot; size1=&quot;5.5&quot; size3=&quot;0&quot; size4=&quot;0&quot; size5=&quot;0&quot; size6=&quot;0&quot; size7=&quot;330.229954801601&quot; speed=&quot;1&quot; timeOffset=&quot;0&quot; tileX=&quot;none&quot; tileY=&quot;none&quot; color=&quot;normal&quot;&gt;&lt;colors&gt;&lt;color red=&quot;255&quot; green=&quot;255&quot; blue=&quot;255&quot; /&gt;&lt;/colors&gt;&lt;remote /&gt;&lt;/node&gt;" type="7" />
@@ -2363,9 +1971,6 @@
         <slot id="109" name="Line scroll">
           <source relativePath="@glsl&lt;node name=&quot;line scroll.frag&quot; nbItems2=&quot;19&quot; size1=&quot;3.02941176470588&quot; size2=&quot;6.84117647058823&quot; size3=&quot;0&quot; size4=&quot;0&quot; size5=&quot;0&quot; size6=&quot;90&quot; speed=&quot;1&quot; timeOffset=&quot;0&quot; tileX=&quot;none&quot; tileY=&quot;none&quot; color=&quot;normal&quot;&gt;&lt;colors&gt;&lt;color red=&quot;255&quot; green=&quot;255&quot; blue=&quot;255&quot; /&gt;&lt;/colors&gt;&lt;remote /&gt;&lt;/node&gt;" type="7" />
         </slot>
-        <slot id="110" name="Happy rainbow">
-          <source relativePath="@animation&lt;node animation=&quot;movingRainbow&quot; size1=&quot;1&quot; speed=&quot;1&quot; direction=&quot;rotate&quot;&gt;&lt;colors&gt;&lt;color red=&quot;255&quot; green=&quot;0&quot; blue=&quot;230&quot; /&gt;&lt;color red=&quot;141&quot; green=&quot;255&quot; blue=&quot;101&quot; /&gt;&lt;/colors&gt;&lt;remote /&gt;&lt;/node&gt;" type="4" />
-        </slot>
         <slot id="119" name="Static">
           <source relativePath="@animation&lt;node animation=&quot;plain&quot; direction=&quot;none&quot;&gt;&lt;colors&gt;&lt;color red=&quot;255&quot; green=&quot;255&quot; blue=&quot;255&quot; /&gt;&lt;/colors&gt;&lt;remote /&gt;&lt;/node&gt;" type="4" />
         </slot>
@@ -2404,11 +2009,10 @@
     <stages>
       <stage ID="cbbd4ad2-e592-4bfb-b4ca-1ec31accfe33">
         <grid isVisible="False" squareWidth="20" squareHeight="20" squareOffsetX="0" squareOffsetY="0" />
-        <monitor merged="True" fullscreen="False" x="1166.4" y="270.4" width="349.6" height="263.2" />
+        <monitor merged="True" fullscreen="False" x="1116" y="572" width="349.6" height="263.2" />
       </stage>
       <stage ID="a840e139-b436-492e-9539-54ce6106ad74">
         <grid isVisible="False" squareWidth="20" squareHeight="20" squareOffsetX="0" squareOffsetY="0" />
-        <monitor merged="True" fullscreen="False" x="1172.8" y="544" width="349.6" height="263.2" />
       </stage>
       <stage ID="f2f4e4a0-4032-48d8-9f38-266afb384bce">
         <grid isVisible="False" squareWidth="20" squareHeight="20" squareOffsetX="0" squareOffsetY="0" />
