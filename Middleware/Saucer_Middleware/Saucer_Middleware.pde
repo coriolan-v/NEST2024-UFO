@@ -26,8 +26,10 @@ int BrightsignPort = 5000;
 
 String BrightsignUDP_Pilot_1 = "PILOT1";
 String BrightsignUDP_Pilot_2 = "PILOT2";
+String BrightsignUDP_Pilot_3 = "PILOT3";
 String BrightsignUDP_Copilot_1 = "COPILOT1";
 String BrightsignUDP_Copilot_2 = "COPILOT2";
+String BrightsignUDP_Copilot_3 = "COPILOT3";
 
 UDP udp;  // define the UDP object
 OscP5 oscP5;
@@ -79,6 +81,10 @@ void draw() {
     if (sendMessageOnce == false) {
       sendMessageOnce = true;
       println("both rfid detected at the same time");
+      
+      // Send message for Interaction trip for both brightsigns
+      udp.send(BrightsignUDP_Pilot_3, Brightsign_Pilot_IP, BrightsignPort);
+      udp.send(BrightsignUDP_Copilot_3, Brightsign_Copilot_IP, BrightsignPort);
 
       // Send the OSC message to ELM
       oscMessage_ELM = new OscMessage("/elm/groups/Inside/performer/play");

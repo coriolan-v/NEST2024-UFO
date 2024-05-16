@@ -1,8 +1,8 @@
 {
   "schedulePresentations": {
     "schedulePresentationsById": {
-      "6d4d5122-07bf-4000-a558-7a34da145000": {
-        "id": "6d4d5122-07bf-4000-a558-7a34da145000",
+      "bf56a1c8-2557-4000-ab10-9cc6d146d000": {
+        "id": "bf56a1c8-2557-4000-ab10-9cc6d146d000",
         "presentationLocator": {
           "name": "COPILOT.bpfx",
           "path": "/Users/coriolan/GitHub/NEST2024-UFO/Content/",
@@ -24,10 +24,10 @@
       }
     },
     "allSchedulePresentations": [
-      "6d4d5122-07bf-4000-a558-7a34da145000"
+      "bf56a1c8-2557-4000-ab10-9cc6d146d000"
     ]
   },
   "modifiedTime": {
-    "lastModifiedTime": "2024-05-04T21:18:40.167Z"
+    "lastModifiedTime": "2024-05-04T21:31:46.159Z"
   }
 }
